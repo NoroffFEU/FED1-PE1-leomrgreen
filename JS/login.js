@@ -15,6 +15,7 @@ loginButton.addEventListener('click', function() {
   })
   .then(response => response.json())
   .then(data => {
-    console.log(data.data)
+    console.log(data.data);
+    console.log('hello ' + data.data.name + 'youre currently logged in as an administrator, please refer to ' + data.data.accessToken + ' when making any changes');
   });
 });
