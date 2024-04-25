@@ -4,32 +4,45 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link rel="stylesheet" href="../css/styles.css" />
   </head>
-  <body>
-    <form id="registerForm">
-      <label for="name">Name:</label>
-      <input type="text" id="name" name="name" placeholder="name" required />
+  <body class="form-bod">
+    <section class="section-form">
+      <form id="registerForm" class="account-form">
+        <h1>REGISTER</h1>
+        <label for="name"></label>
+        <input
+          type="text"
+          id="name"
+          name="name"
+          placeholder="Username"
+          required
+        />
 
-      <label for="email">Email:</label>
-      <input
-        type="email"
-        id="email"
-        name="email"
-        placeholder="email"
-        required
-      />
+        <label for="email"></label>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          placeholder="Email Address"
+          required
+        />
 
-      <label for="password">Password:</label>
-      <input
-        type="password"
-        id="password"
-        name="password"
-        placeholder="password"
-        required
-      />
+        <label for="password"></label>
+        <input
+          type="password"
+          id="password"
+          name="password"
+          placeholder="Select a password"
+          required
+        />
 
-      <button type="button" id="submitButton">SUBMIT</button>
-    </form>
+        <button type="button" id="submitButton">Register</button>
+      </form>
+      <p class="swap-form">
+        Already have an account? <a href="./login.html">Log in</a>
+      </p>
+    </section>
     <script src="/JS/register.js"></script>
   </body>
 </html>
