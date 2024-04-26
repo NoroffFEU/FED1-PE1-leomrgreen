@@ -19,6 +19,7 @@ nav > ul {
   display: flex;
   color: var(--sky-blue-300);
   gap: 0.5rem;
+  z-index: 101;
 }
 
 .logo i {
