@@ -19,6 +19,10 @@
   font-family: "Oswald", sans-serif;
 }
 
+body {
+  background-color: var(--dark-grey-100);
+}
+
 .form-bod {
   height: 100vh;
   display: flex;
@@ -183,5 +187,41 @@ ul li:hover {
 
   #navList.active {
     left: 0;
+  }
+}
+
+.banner {
+  height: 80vh;
+  width: min(90%, 85rem);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: auto;
+  place-content: center;
+  align-items: center;
+  text-align: center;
+  color: var(--white);
+}
+
+.banner h1 {
+  font-size: calc(72px + 1vw);
+}
+
+.banner h2 {
+  font-size: calc(42px + 1vw);
+  font-weight: 300;
+  text-wrap: nowrap;
+}
+
+.banner img {
+  max-width: 100%;
+}
+
+@media (max-width: 1000px) {
+  .banner {
+    grid-template-columns: 1fr;
+  }
+
+  .banner h2 {
+    text-wrap: wrap;
   }
 }
