@@ -1,9 +1,8 @@
 document.addEventListener('DOMContentLoaded', function () {
   const createForm = document.getElementById('blogPostForm');
 
-  createForm.addEventListener('submit', function(event) {
-    event.preventDefault(); // Prevent the default form submission
-
+  createForm.addEventListener('submit', function() {
+  
     const title = document.getElementById('title').value;
     const body = document.getElementById('body').value;
     const mediaUrl = document.getElementById('mediaUrl').value;
