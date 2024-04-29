@@ -1,0 +1,22 @@
+.createPost-section {
+  width: min(90%, 70rem);
+  margin: auto;
+  display: flex;
+  justify-content: center;
+}
+
+#createBod {
+  min-height: 100vh;
+  display: flex;
+}
+
+#blogPostForm {
+  display: grid;
+  color: var(--white);
+  width: min(80%, 35rem);
+  gap: 2rem;
+}
+
+#blogPostForm > input {
+  height: 35px;
+}

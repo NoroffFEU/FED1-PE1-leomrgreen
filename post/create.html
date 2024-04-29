@@ -13,5 +13,42 @@
     />
     <link rel="stylesheet" href="../css/styles.css" />
   </head>
-  <body></body>
+  <body id="createBod">
+    <header>
+      <nav>
+        <div class="logo">
+          <i class="fa-solid fa-user-astronaut"></i>
+          <h1>StarLog</h1>
+        </div>
+        <ul id="navList">
+          <li><a href="../index.html">Blog</a></li>
+          <li><a href="../about">About</a></li>
+          <li><i class="fa-regular fa-sun"></i></li>
+          <li>
+            <a href="../account/login.html"><i class="fa-solid fa-user"></i></a>
+          </li>
+        </ul>
+        <i class="fa-solid fa-bars" id="burger"></i>
+      </nav>
+    </header>
+    <section class="createPost-section">
+      <form id="blogPostForm">
+        <label for="title">Title:</label>
+        <input type="text" id="title" name="title" required />
+
+        <label for="body">Body:</label>
+        <textarea name="body" id="body" cols="30" rows="10"></textarea>
+
+        <label for="mediaUrl">Media URL:</label>
+        <input type="url" id="mediaUrl" name="mediaUrl" />
+
+        <label for="mediaAlt">Media description (image alt text)</label>
+        <input type="text" id="mediaAlt" name="mediaAlt" />
+
+        <button type="submit">Create Post</button>
+      </form>
+    </section>
+    <script src="../JS/navMenu.js"></script>
+    <script src="../JS/createPost.js"></script>
+  </body>
 </html>
