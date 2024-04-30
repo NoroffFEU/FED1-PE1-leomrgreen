@@ -8,15 +8,47 @@
 #createBod {
   min-height: 100vh;
   display: flex;
+  flex-direction: column;
+  background-image: url("../images/astro-inspace.png");
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 
 #blogPostForm {
   display: grid;
   color: var(--white);
-  width: min(80%, 35rem);
+  width: min(90%, 45rem);
   gap: 2rem;
+  padding: 5rem 1rem 5rem 1rem;
+  align-items: center;
+  place-items: center;
 }
 
 #blogPostForm > input {
   height: 35px;
+  padding: 0.5rem;
+  width: 100%;
+  border-radius: 10px;
+}
+
+#blogPostForm > textarea {
+  padding: 0.5rem;
+  width: 100%;
+  resize: none;
+}
+
+#blogPostForm label,
+#blogPostForm h1 {
+  color: var(--sky-blue-300);
+  font-weight: 800;
+}
+
+#blogPostForm button {
+  background-color: var(--sky-blue-300);
+  height: 30px;
+  border: none;
+  border-radius: 10px;
+  width: 50%;
+  cursor: pointer;
+  color: var(--white);
 }

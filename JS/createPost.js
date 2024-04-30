@@ -1,8 +1,9 @@
 document.addEventListener('DOMContentLoaded', function () {
   const createForm = document.getElementById('blogPostForm');
 
-  createForm.addEventListener('submit', function() {
-  
+  createForm.addEventListener('submit', function(event) {
+    event.preventDefault(); 
+
     const title = document.getElementById('title').value;
     const body = document.getElementById('body').value;
     const mediaUrl = document.getElementById('mediaUrl').value;
@@ -14,7 +15,9 @@ document.addEventListener('DOMContentLoaded', function () {
 
 function createBlogPost(title, body, mediaUrl, mediaAlt) {
   const url = 'https://v2.api.noroff.dev/blog/posts/leomrgreen';
-  const accessToken = JSON.parse(sessionStorage.getItem("session"));
+  const accessToken = JSON.parse(sessionStorage.getItem("session")); 
+
+
   const postData = {
     title: title,
     body: body,
