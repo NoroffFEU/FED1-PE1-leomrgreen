@@ -35,12 +35,17 @@
   padding: 0.5rem;
   width: 100%;
   resize: none;
+  border-radius: 10px;
 }
 
 #blogPostForm label,
 #blogPostForm h1 {
   color: var(--sky-blue-300);
   font-weight: 800;
+}
+
+#blogPostForm h1 {
+  font-size: 72px;
 }
 
 #blogPostForm button {
@@ -51,4 +56,20 @@
   width: 50%;
   cursor: pointer;
   color: var(--white);
+}
+
+@media (max-width: 1000px) {
+  #blogPostForm h1 {
+    font-size: 52px;
+  }
+}
+
+@media (max-width: 500px) {
+  #blogPostForm h1 {
+    font-size: 38px;
+  }
+
+  #createBod {
+    background-image: none;
+  }
 }
