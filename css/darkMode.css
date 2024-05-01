@@ -5,11 +5,21 @@
 }
 
 .drkModeTrigger > ul a,
-.drkModeTrigger > ul i {
+.drkModeTrigger > ul i,
+.drkModeTrigger > ul,
+.drkModeTrigger > p {
   color: var(--sky-blue-500);
+  background: none;
 }
 
 .fa-moon,
 .fa-lightbulb {
   cursor: pointer;
+}
+
+@media (max-width: 1000px) {
+  .drkModeTrigger > ul a,
+  .drkModeTrigger > ul i {
+    color: var(--white);
+  }
 }

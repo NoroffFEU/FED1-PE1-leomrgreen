@@ -17,6 +17,7 @@ const drkModeButton = document.getElementById('drkModeIcon');
 drkModeButton.addEventListener('click', () => {
   const darkModeElements = document.querySelectorAll('.drkMode');
   let isDarkMode = document.body.classList.contains('drkModeTrigger'); 
+  const bgBody = document.querySelectorAll('body'); 
   
   // Toggle dark mode class on all elements
   darkModeElements.forEach(element => {
@@ -28,4 +29,5 @@ drkModeButton.addEventListener('click', () => {
   } else {
     drkModeButton.className = 'fa-regular fa-lightbulb'; 
   }
+
 });
