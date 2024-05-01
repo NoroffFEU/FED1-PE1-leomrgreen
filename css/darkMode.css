@@ -1,12 +1,11 @@
 .drkModeTrigger {
   background-color: var(--white);
-  color: var(--sky-blue-600);
+  color: var(--dark-grey-100);
   transition: 300ms ease;
 }
 
 .drkModeTrigger > ul a,
 .drkModeTrigger > ul i,
-.drkModeTrigger > ul,
 .drkModeTrigger > p {
   color: var(--sky-blue-500);
   background: none;
@@ -21,5 +20,11 @@
   .drkModeTrigger > ul a,
   .drkModeTrigger > ul i {
     color: var(--white);
+  }
+}
+
+@media (min-width: 1000px) {
+  .drkModeTrigger > ul {
+    background: none;
   }
 }

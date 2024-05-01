@@ -48,4 +48,5 @@
 .sliderItem img {
   width: min(100%, 550px);
   margin-inline: auto;
+  border-radius: 1rem;
 }
