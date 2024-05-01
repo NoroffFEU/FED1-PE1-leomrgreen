@@ -23,7 +23,7 @@ footer {
 }
 
 .footer-w i {
-  font-size: 40px;
+  font-size: 35px;
   padding: 1rem 1rem 1rem 0;
 }
 
@@ -37,7 +37,12 @@ footer h4 {
 }
 
 .footer-card {
-  background-color: var(--sky-blue-600);
+  background: rgb(30, 58, 138);
+  background: linear-gradient(
+    236deg,
+    rgba(30, 58, 138, 1) 0%,
+    rgba(59, 130, 246, 1) 100%
+  );
   box-shadow: 20px 20px 0px var(--dark-grey-200);
   border-radius: 1rem 0 1rem 0;
   padding: 2.5rem;
@@ -52,11 +57,11 @@ footer h4 {
 .footer-card a {
   background-color: var(--white);
   border: none;
+  border-radius: 0.5rem 0 0.5rem 0;
   color: var(--sky-blue-600);
   font-size: 1.1rem;
   font-weight: 500;
   padding: 0.5rem;
-  border-radius: 10px;
   margin-top: 2rem;
   width: 100%;
   text-decoration: none;
@@ -72,6 +77,14 @@ footer h4 {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 3rem;
+}
+
+.read-more i {
+  color: var(--white);
+}
+
+.social i {
+  color: var(--sky-blue-300);
 }
 
 @media (max-width: 1200px) {
