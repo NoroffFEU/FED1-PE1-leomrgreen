@@ -1,0 +1,15 @@
+.drkModeTrigger {
+  background-color: var(--white);
+  color: var(--sky-blue-600);
+  transition: 300ms ease;
+}
+
+.drkModeTrigger > ul a,
+.drkModeTrigger > ul i {
+  color: var(--sky-blue-500);
+}
+
+.fa-moon,
+.fa-lightbulb {
+  cursor: pointer;
+}

@@ -12,6 +12,7 @@
 
 .banner h1 {
   font-size: 72px;
+  color: var(--sky-blue-300);
 }
 
 .banner h2 {

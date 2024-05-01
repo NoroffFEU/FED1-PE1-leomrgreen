@@ -13,17 +13,17 @@
     />
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
-  <body>
+  <body class="drkMode">
     <header>
-      <nav>
+      <nav class="drkMode">
         <div class="logo">
           <i class="fa-solid fa-user-astronaut"></i>
           <h1>StarLog</h1>
         </div>
-        <ul id="navList">
+        <ul id="navList" class="drkMode">
           <li><a href="./">Blog</a></li>
           <li><a href="./about">About</a></li>
-          <li><i class="fa-regular fa-sun"></i></li>
+          <li><i class="fa-regular fa-lightbulb" id="drkModeIcon"></i></li>
           <li>
             <a href="./account/login.html"><i class="fa-solid fa-user"></i></a>
           </li>
@@ -35,7 +35,7 @@
       <section class="banner home-banner">
         <div class="hero-title">
           <h1>StarLog</h1>
-          <h2>Your Latest Launch Into The Cosmos</h2>
+          <h2 class="drkMode">Your Latest Launch Into The Cosmos</h2>
           <a href="./post/create.html">Create</a>
         </div>
         <div>
@@ -46,12 +46,19 @@
         </div>
       </section>
       <div class="banner-break"></div>
+      <section class="carousel-section">
+        <div id="carouselContainer">
+          <div id="slides"></div>
+          <button class="fa-solid fa-arrow-left" id="prev"></button>
+          <button class="fa-solid fa-arrow-right" id="next"></button>
+        </div>
+      </section>
     </main>
-    <footer>
+    <footer class="drkMode">
       <div class="footer-w">
         <div class="foot-col social">
           <h3>Get In Touch</h3>
-          <p>
+          <p class="drkMode">
             Interested in collaborating or contributing to our blog? We'd love
             to hear from you! Contact us at
             <span class="contact-inq">lorem.ipsum@gmail.com</span>
@@ -77,6 +84,7 @@
         </div>
       </div>
     </footer>
+    <script src="./JS/carousel.js"></script>
     <script src="./JS/navMenu.js"></script>
   </body>
 </html>
