@@ -1,12 +1,7 @@
 footer {
   width: 100%;
   padding: 5rem 1rem 5rem 1rem;
-  background: rgb(30, 58, 138);
-  background: linear-gradient(
-    90deg,
-    rgba(30, 58, 138, 1) 0%,
-    rgba(59, 130, 246, 1) 100%
-  );
+  background-color: var(--dark-grey-100);
 }
 
 .footer-w {
@@ -20,6 +15,7 @@ footer {
 
 .foot-col h3 {
   font-size: 52px;
+  color: var(--sky-blue-300);
 }
 
 .foot-col {
@@ -37,26 +33,55 @@ footer p {
 
 footer h4 {
   font-size: 30px;
+  color: var(--white);
 }
 
 .footer-card {
   background-color: var(--sky-blue-600);
-  box-shadow: 20px 20px 10px var(--dark-grey-100);
-  padding: 2rem;
+  box-shadow: 20px 20px 0px var(--dark-grey-200);
+  border-radius: 1rem 0 1rem 0;
+  padding: 2.5rem;
   text-align: center;
+  place-items: center;
+  width: 100%;
+  gap: 1rem;
+  display: grid;
+  margin-inline: auto;
 }
 
-.footer-card button {
+.footer-card a {
   background-color: var(--white);
   border: none;
-  color: var(--sky-blue-300);
+  color: var(--sky-blue-600);
+  font-size: 1.1rem;
+  font-weight: 500;
   padding: 0.5rem;
   border-radius: 10px;
-  width: 50%;
+  margin-top: 2rem;
+  width: 100%;
+  text-decoration: none;
+  transition: 200ms ease;
+}
+
+.footer-card a:hover {
+  box-shadow: 5px 5px 0px var(--dark-grey-200);
+  transition: 200ms ease;
 }
 
 .read-more {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 3rem;
+}
+
+@media (max-width: 1200px) {
+  .footer-w {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 950px) {
+  .read-more {
+    grid-template-columns: 1fr;
+  }
 }
