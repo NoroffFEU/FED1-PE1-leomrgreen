@@ -43,6 +43,9 @@
 .sliderItem {
   flex-direction: column;
   text-align: center;
+  font-size: 30px;
+  color: var(--sky-blue-400);
+  text-wrap: nowrap;
 }
 
 .sliderItem img {
@@ -50,4 +53,14 @@
   max-height: 350px;
   margin-inline: auto;
   border-radius: 1rem;
+}
+
+@media (max-width: 700px) {
+  .sliderItem {
+    font-size: 20px;
+  }
+
+  .sliderItem img {
+    height: 230px;
+  }
 }

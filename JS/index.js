@@ -1,5 +1,5 @@
 const API_URL = 'https://v2.api.noroff.dev/blog/posts/leomrgreen';
-let blogArticles = [];
+const loadMoreBtn = document.getElementById('loadMoreBtn');
 
 function displayPosts(blogArticles) {
   const blogContainer = document.getElementById('articleGrid');
@@ -29,9 +29,13 @@ async function main() {
   try {
     const response = await fetch(API_URL);
     const json = await response.json();
-    blogArticles = json.data;
-    console.log(blogArticles);
-    displayPosts(blogArticles);
+    let blogArticles = json.data;
+    displayPosts(blogArticles.slice(0, 12));
+    loadMoreBtn.addEventListener('click', () => {
+      displayPosts(blogArticles);  // DOM-manipulation based on if we click on load more or not (slice method)
+      loadMoreBtn.style.display = 'none';
+    }) 
+    
   } catch (error) {
     console.error('ERROR:', error)
   } finally {
