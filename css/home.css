@@ -53,3 +53,7 @@
     rgba(59, 130, 246, 1) 100%
   );
 }
+
+.gridCard img {
+  width: 200px;
+}

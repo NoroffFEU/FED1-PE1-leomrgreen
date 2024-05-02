@@ -47,6 +47,7 @@
 
 .sliderItem img {
   width: min(100%, 550px);
+  max-height: 350px;
   margin-inline: auto;
   border-radius: 1rem;
 }

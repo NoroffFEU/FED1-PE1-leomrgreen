@@ -13,17 +13,17 @@
     />
     <link rel="stylesheet" href="../css/styles.css" />
   </head>
-  <body id="createBod">
+  <body id="createBod" class="drkMode">
     <header>
-      <nav>
+      <nav class="drkMode">
         <div class="logo">
           <i class="fa-solid fa-user-astronaut"></i>
           <h1>StarLog</h1>
         </div>
-        <ul id="navList">
-          <li><a href="../index.html">Blog</a></li>
+        <ul id="navList" class="drkMode">
+          <li><a href="../">Blog</a></li>
           <li><a href="../about">About</a></li>
-          <li><i class="fa-regular fa-sun"></i></li>
+          <li><i class="fa-regular fa-lightbulb" id="drkModeIcon"></i></li>
           <li>
             <a href="../account/login.html"><i class="fa-solid fa-user"></i></a>
           </li>
@@ -31,25 +31,57 @@
         <i class="fa-solid fa-bars" id="burger"></i>
       </nav>
     </header>
-    <section class="createPost-section">
-      <form id="blogPostForm">
-        <h1>Upload Your Blogpost</h1>
-        <label for="title">Title:</label>
-        <input type="text" id="title" name="title" required />
+    <main>
+      <section class="createPost-section">
+        <form id="blogPostForm">
+          <h1>Upload Your Blogpost</h1>
+          <label for="title">Title:</label>
+          <input type="text" id="title" name="title" required />
 
-        <label for="body">Body:</label>
-        <textarea name="body" id="body" cols="30" rows="10"></textarea>
+          <label for="body">Body:</label>
+          <textarea name="body" id="body" cols="30" rows="10"></textarea>
 
-        <label for="mediaUrl">Media URL:</label>
-        <input type="url" id="mediaUrl" name="mediaUrl" />
+          <label for="mediaUrl">Media URL:</label>
+          <input type="url" id="mediaUrl" name="mediaUrl" />
 
-        <label for="mediaAlt">Media description (image alt text):</label>
-        <input type="text" id="mediaAlt" name="mediaAlt" />
+          <label for="mediaAlt">Media description (image alt text):</label>
+          <input type="text" id="mediaAlt" name="mediaAlt" />
 
-        <button type="submit">Create Post</button>
-      </form>
-    </section>
+          <button type="submit">Create Post</button>
+        </form>
+      </section>
+    </main>
     <script src="../JS/navMenu.js"></script>
     <script src="../JS/createPost.js"></script>
+    <footer class="drkMode">
+      <div class="footer-w">
+        <div class="foot-col social">
+          <h3>Get In Touch</h3>
+          <p class="drkMode">
+            Interested in collaborating or contributing to our blog? We'd love
+            to hear from you! Contact us at
+            <span class="contact-inq">lorem.ipsum@gmail.com</span>
+          </p>
+          <div class="social-media">
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-square-x-twitter"></i>
+            <i class="fa-brands fa-tiktok"></i>
+          </div>
+        </div>
+        <div class="foot-col read-more">
+          <div class="footer-card">
+            <i class="fa-solid fa-address-card"></i>
+            <h4>StarLog?</h4>
+            <a href="./about/index.html">ABOUT</a>
+          </div>
+          <div class="footer-card">
+            <i class="fa-solid fa-newspaper"></i>
+            <h4>Space-news?</h4>
+            <a href="./">BLOG</a>
+          </div>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
