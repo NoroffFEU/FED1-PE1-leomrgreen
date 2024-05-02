@@ -16,6 +16,8 @@
 
 @import "./darkMode.css";
 
+@import "./skeleton.css";
+
 * {
   padding: 0;
   margin: 0;

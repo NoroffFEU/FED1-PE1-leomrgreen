@@ -1,0 +1,55 @@
+.gridCard.loading {
+  background: #eee;
+  background: linear-gradient(110deg, #ececec 8%, #f5f5f5 18%, #ececec 33%);
+  background-size: 200% 100%;
+  animation: 1.5s skeleton linear infinite;
+}
+
+.gridCard.loading img,
+.gridCard.loading h3 {
+  opacity: 0;
+}
+
+@keyframes skeleton {
+  to {
+    background-position-x: -200%;
+  }
+}
+
+.gridCard.loadingDark {
+  background: #3a3a3a;
+  background: linear-gradient(110deg, #333 8%, #404040 18%, #333 33%);
+  background-size: 200% 100%;
+  animation: 1.5s skeleton linear infinite;
+}
+
+.gridCard.loadingDark img,
+.gridCard.loadingDark h3 {
+  opacity: 0;
+}
+
+.sliderItem.loading {
+  background: #eee;
+  background: linear-gradient(110deg, #ececec 8%, #f5f5f5 18%, #ececec 33%);
+  background-size: 200% 100%;
+  animation: 1.5s skeleton linear infinite;
+  border-radius: 1rem;
+}
+
+.sliderItem.loading img,
+.sliderItem.loading > h2 {
+  opacity: 0;
+}
+
+.sliderItem.loadingDark {
+  background: #3a3a3a;
+  background: linear-gradient(110deg, #333 8%, #404040 18%, #333 33%);
+  background-size: 200% 100%;
+  animation: 1.5s skeleton linear infinite;
+  border-radius: 1rem;
+}
+
+.sliderItem.loadingDark img,
+.sliderItem.loadingDark h2 {
+  opacity: 0;
+}

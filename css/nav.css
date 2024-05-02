@@ -8,6 +8,7 @@ nav {
   background-color: var(--dark-grey-100);
   align-items: center;
   z-index: 100;
+  transition: 500ms ease;
 }
 
 nav > ul {
@@ -55,6 +56,11 @@ ul li:hover {
   font-size: 20px;
   cursor: pointer;
   display: none;
+}
+
+.fa-moon,
+.fa-lightbulb {
+  cursor: pointer;
 }
 
 @media (max-width: 1000px) {

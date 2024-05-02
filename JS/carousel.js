@@ -1,6 +1,7 @@
 const slidesContainer = document.getElementById('slides');
 let currentIndex = 0;
 const API_URL = 'https://v2.api.noroff.dev/blog/posts/leomrgreen';
+const slideCards = document.querySelectorAll('.sliderItem');
 
 function getData() {
   fetch(API_URL, { method: 'GET' })  
@@ -13,10 +14,30 @@ function getData() {
       .then(data => {
           carouselArray = data.data.sort((a, b) => new Date(b.created) - new Date(a.created)).slice(0, 3);
           imageCarousel(carouselArray);
+          skeletonCarouselLoader();
       })
       .catch(error => {
           console.error('Error:', error);
       });
+}
+
+function skeletonCarouselLoader() {
+  const slideCards = document.querySelectorAll('.sliderItem'); 
+  if (localStorage.getItem('lightMode') === 'false') {
+    slideCards.forEach(card => { 
+      card.classList.add('loadingDark'); 
+      setTimeout(() => {
+        card.classList.remove('loadingDark'); 
+      }, 1500);
+    });
+  } else {
+    slideCards.forEach(card => { 
+      card.classList.add('loading'); 
+      setTimeout(() => {
+        card.classList.remove('loading'); 
+      }, 1500);
+    });
+  }
 }
 
 function imageCarousel(carouselArray) {  // this function is from my previous JS1 submission. New thing with this is the new Date and slice method that I use to reach the latest 3 posts from my API array

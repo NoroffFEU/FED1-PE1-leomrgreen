@@ -79,9 +79,10 @@
   text-align: center;
   padding: 2rem;
   border-radius: 10px;
+  transition: 200ms ease;
 }
 
-.gridCard img:hover {
+.gridCard:hover {
   scale: 1.1;
 }
 
@@ -94,7 +95,6 @@
   width: min(100%, 350px);
   height: 250px;
   border-radius: 10px;
-  transition: 200ms ease;
   cursor: pointer;
 }
 

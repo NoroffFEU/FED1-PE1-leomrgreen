@@ -11,11 +11,6 @@
   background: none;
 }
 
-.fa-moon,
-.fa-lightbulb {
-  cursor: pointer;
-}
-
 @media (max-width: 1000px) {
   .lightMode > ul a,
   .lightMode > ul i {

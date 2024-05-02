@@ -30,9 +30,9 @@ drkModeButton.addEventListener('click', () => {
 
   // Update the icon based on the current mode
   if (!isLightMode) { 
-    drkModeButton.className = 'fa-regular fa-moon';
-  } else {
     drkModeButton.className = 'fa-regular fa-lightbulb';
+  } else {
+    drkModeButton.className = 'fa-regular fa-moon';
   }
 });
 
@@ -43,9 +43,9 @@ document.addEventListener('DOMContentLoaded', () => {
     darkModeElements.forEach(element => {
       element.classList.add('lightMode');
     });
-    drkModeButton.className = 'fa-regular fa-lightbulb';
-  } else {
     drkModeButton.className = 'fa-regular fa-moon';
+  } else {
+    drkModeButton.className = 'fa-regular fa-lightbulb';
   }
 });
 
