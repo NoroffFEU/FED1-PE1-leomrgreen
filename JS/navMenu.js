@@ -11,23 +11,41 @@ burger.addEventListener("click", () => {
   }
 });
 
-
-const drkModeButton = document.getElementById('drkModeIcon');  
+const drkModeButton = document.getElementById('drkModeIcon');
 
 drkModeButton.addEventListener('click', () => {
   const darkModeElements = document.querySelectorAll('.drkMode');
-  let isDarkMode = document.body.classList.contains('drkModeTrigger'); 
-  const bgBody = document.querySelectorAll('body'); 
   
-  // Toggle dark mode class on all elements
-  darkModeElements.forEach(element => {
-    element.classList.toggle('drkModeTrigger');
-  });
+  let isLightMode = localStorage.getItem('lightMode') === 'true';
   
-  if (!isDarkMode) {
-    drkModeButton.className = 'fa-regular fa-moon';  
-  } else {
-    drkModeButton.className = 'fa-regular fa-lightbulb'; 
-  }
+  // Toggle the dark mode state
+  isLightMode = !isLightMode;
 
+  // Save the new state back to localStorage
+  localStorage.setItem('lightMode', isLightMode.toString());
+
+  darkModeElements.forEach(element => {
+    element.classList.toggle('lightMode');
+  });
+
+  // Update the icon based on the current mode
+  if (!isLightMode) { 
+    drkModeButton.className = 'fa-regular fa-moon';
+  } else {
+    drkModeButton.className = 'fa-regular fa-lightbulb';
+  }
 });
+
+document.addEventListener('DOMContentLoaded', () => {
+  const isLightMode = localStorage.getItem('lightMode') === 'true';
+  if (isLightMode) {
+    const darkModeElements = document.querySelectorAll('.drkMode');
+    darkModeElements.forEach(element => {
+      element.classList.add('lightMode');
+    });
+    drkModeButton.className = 'fa-regular fa-lightbulb';
+  } else {
+    drkModeButton.className = 'fa-regular fa-moon';
+  }
+});
+

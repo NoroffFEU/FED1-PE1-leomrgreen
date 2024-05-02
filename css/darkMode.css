@@ -1,12 +1,12 @@
-.drkModeTrigger {
+.lightMode {
   background-color: var(--white);
   color: var(--dark-grey-100);
   transition: 300ms ease;
 }
 
-.drkModeTrigger > ul a,
-.drkModeTrigger > ul i,
-.drkModeTrigger > p {
+.lightMode > ul a,
+.lightMode > ul i,
+.lightMode > p {
   color: var(--sky-blue-500);
   background: none;
 }
@@ -17,14 +17,14 @@
 }
 
 @media (max-width: 1000px) {
-  .drkModeTrigger > ul a,
-  .drkModeTrigger > ul i {
+  .lightMode > ul a,
+  .lightMode > ul i {
     color: var(--white);
   }
 }
 
 @media (min-width: 1000px) {
-  .drkModeTrigger > ul {
+  .lightMode > ul {
     background: none;
   }
 }
