@@ -13,16 +13,19 @@
 .banner h1 {
   font-size: 72px;
   color: var(--sky-blue-300);
+  animation: slideInLeft 1s ease-in;
 }
 
 .banner h2 {
   font-size: 42px;
   font-weight: 300;
   text-wrap: nowrap;
+  animation: slideInLeft 1s ease-in;
 }
 
 .banner img {
   max-width: 100%;
+  animation: slideInRight 1s ease-in;
 }
 
 @media (max-width: 1000px) {
@@ -111,6 +114,7 @@
   background-color: var(--sky-blue-300);
   color: var(--white);
   font-size: 20px;
+  border-radius: 10px;
   cursor: pointer;
   transition: 200ms ease;
 }
@@ -118,4 +122,24 @@
 .btnContainer > button:hover {
   box-shadow: 7px 7px 0 var(--sky-blue-600);
   transition: 200ms ease;
+}
+
+@keyframes slideInLeft {
+  from {
+    transform: translateX(-300px);
+  }
+
+  to {
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInRight {
+  from {
+    transform: translateX(300px);
+  }
+
+  to {
+    transform: translateX(0);
+  }
 }

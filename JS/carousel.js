@@ -40,27 +40,31 @@ function skeletonCarouselLoader() {
   }
 }
 
-function imageCarousel(carouselArray) { 
-    slidesContainer.innerHTML = '';
-    for (let i = 0; i < carouselArray.length; i++) {
-        const carouselImage = document.createElement('div');
-        if (i === 0) {
-            carouselImage.style.display = 'flex';
-        } else {
-            carouselImage.style.display = 'none';
-        }
-        
-        carouselImage.innerHTML = 
-        `<img src="${carouselArray[i].media.url}">
-        <h2>${carouselArray[i].title}</h2>`;
-        carouselImage.addEventListener('click', () => {
-          window.location.href = `./post/?id=${carouselArray[i].id}`; 
-        });
-        
-        carouselImage.setAttribute('class', 'sliderItem');
-        slidesContainer.appendChild(carouselImage);
-    }
+function imageCarousel(carouselArray) {
+  slidesContainer.innerHTML = '';
+  for (let i = 0; i < carouselArray.length; i++) {
+      const carouselImage = document.createElement('div');
+      carouselImage.className = 'sliderItem';
+      carouselImage.style.display = i === 0 ? 'flex' : 'none';  // Show first item, hide others initially
+
+      carouselImage.innerHTML = `
+        <img src="${carouselArray[i].media.url}">
+        <h2>${carouselArray[i].title}</h2>
+        <button class="readMoreBtn" data-id="${carouselArray[i].id}">READ MORE</button>`;
+
+      slidesContainer.appendChild(carouselImage);
+  }
+
+  // Add event listeners to each button after they have been added to the DOM
+  document.querySelectorAll('.readMoreBtn').forEach(button => {
+      button.addEventListener('click', function() {
+          const postId = this.getAttribute('data-id');
+          window.location.href = `/post/?id=${postId}`;  
+      });
+  });
 }
+
+
 
 function showCurrentImage() {  // this function is from my previous JS1 submission. Image is shown based on current index state
   const images = slidesContainer.querySelectorAll('.sliderItem');

@@ -13,5 +13,50 @@
     />
     <link rel="stylesheet" href="../css/styles.css" />
   </head>
-  <body></body>
+  <body>
+    <header>
+      <nav class="drkMode">
+        <div class="logo">
+          <i class="fa-solid fa-user-astronaut"></i>
+          <h1>StarLog</h1>
+        </div>
+        <ul id="navList" class="drkMode">
+          <li><a href="../">Blog</a></li>
+          <li><a href="../about">About</a></li>
+          <li><i class="fa-regular fa-lightbulb" id="drkModeIcon"></i></li>
+          <li>
+            <a href="../account/login.html"
+              ><i class="fa-solid fa-user" id="userIcon"></i
+            ></a>
+            <button id="signOutBtn">SIGN OUT</button>
+          </li>
+        </ul>
+        <i class="fa-solid fa-bars" id="burger"></i>
+      </nav>
+    </header>
+    <main>
+      <!DOCTYPE html>
+      <html lang="en">
+        <head>
+          <meta charset="UTF-8" />
+          <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1.0"
+          />
+          <title>Edit Blog Post</title>
+        </head>
+        <body>
+          <form id="editForm">
+            <input type="text" id="title" name="title" required />
+            <textarea id="body" name="body"></textarea>
+            <input type="text" id="mediaUrl" name="mediaUrl" required />
+            <input type="text" id="mediaAlt" name="mediaAlt" required />
+            <button type="submit">Update Post</button>
+          </form>
+
+          <script src="edit.js"></script>
+        </body>
+      </html>
+    </main>
+  </body>
 </html>

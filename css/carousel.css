@@ -1,5 +1,5 @@
 .carousel-section {
-  width: min(90%, 70rem);
+  width: min(95%, 70rem);
   margin-inline: auto;
 }
 
@@ -17,7 +17,7 @@
 #next {
   position: absolute;
   top: 50%;
-  transform: translateY(-50%);
+  transform: translateY(-150%);
   background: none;
   border: none;
   color: var(--sky-blue-300);
@@ -28,7 +28,7 @@
 
 #prev:hover,
 #next:hover {
-  scale: 1.1;
+  scale: 1.05;
   transition: 100ms ease;
 }
 
@@ -43,9 +43,11 @@
 .sliderItem {
   flex-direction: column;
   text-align: center;
+  justify-content: center;
   font-size: 30px;
   color: var(--sky-blue-400);
   text-wrap: nowrap;
+  gap: 2rem;
 }
 
 .sliderItem img {
@@ -53,6 +55,24 @@
   max-height: 350px;
   margin-inline: auto;
   border-radius: 1rem;
+}
+
+.readMoreBtn {
+  background-color: var(--sky-blue-300);
+  color: var(--white);
+  border: none;
+  width: min(100%, 200px);
+  margin: auto;
+  padding: 10px 15px 10px 15px;
+  cursor: pointer;
+  font-size: 20px;
+  border-radius: 10px;
+  transition: 200ms ease;
+}
+
+.readMoreBtn:hover {
+  box-shadow: 5px 5px 0 var(--sky-blue-600);
+  transition: 200ms ease;
 }
 
 @media (max-width: 700px) {
