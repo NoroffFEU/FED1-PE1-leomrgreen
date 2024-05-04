@@ -18,6 +18,8 @@
 
 @import "./skeleton.css";
 
+@import "./blogPost.css";
+
 * {
   padding: 0;
   margin: 0;

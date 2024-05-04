@@ -47,6 +47,10 @@ function generateBlogHtml(article) {
   const articleImage = document.createElement('img');
   articleImage.src = article.media.url;
   articleImage.alt = article.media.alt;
+  articleImage.addEventListener('click', () => {
+    window.location.href = `./post/?id=${article.id}`; 
+  });
+  
 
   const articleHeading = document.createElement('h3');
   articleHeading.textContent = article.title;

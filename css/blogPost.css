@@ -1,0 +1,33 @@
+#articleWrapper {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  width: min(90%, 70rem);
+  gap: 2rem;
+  padding-top: 5rem;
+}
+
+#imageContainer img {
+  max-width: 100%;
+  border-radius: 10px;
+}
+
+#descContainer {
+  text-align: center;
+  display: grid;
+  gap: 1.5rem;
+  max-width: 500px;
+  color: var(--white);
+}
+
+#descContainer h1 {
+  color: var(--sky-blue-300);
+}
+
+@media (max-width: 1000px) {
+  #articleWrapper {
+    flex-direction: column;
+  }
+}
