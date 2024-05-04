@@ -54,7 +54,7 @@ function generateBlogHtml(article) {
   const editBtn = document.createElement('button');
   editBtn.className = 'fa-solid fa-wrench'
   editBtn.addEventListener('click',  () => {
-    window.location.href = `./post/edit.html?=${article.id}`;
+    window.location.href = `./post/edit.html?id=${article.id}`;
   })
 
   const articleHeading = document.createElement('h3');

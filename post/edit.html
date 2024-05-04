@@ -45,14 +45,22 @@
           />
           <title>Edit Blog Post</title>
         </head>
-        <body>
-          <form id="editForm">
-            <input type="text" id="title" name="title" required />
-            <textarea id="body" name="body"></textarea>
-            <input type="text" id="mediaUrl" name="mediaUrl" required />
-            <input type="text" id="mediaAlt" name="mediaAlt" required />
-            <button type="submit">Update Post</button>
-          </form>
+        <body class="drkMode">
+          <section class="editSection">
+            <form id="editForm">
+              <input type="text" id="title" name="title" required />
+              <textarea
+                id="body"
+                class="descripBod"
+                name="body"
+                rows="10"
+              ></textarea>
+              <input type="text" id="mediaUrl" name="mediaUrl" required />
+              <input type="text" id="mediaAlt" name="mediaAlt" required />
+              <button id="updateBtn" type="submit">Update Post</button>
+              <button id="deleteBtn" type="button">DELETE POST</button>
+            </form>
+          </section>
 
           <script src="../JS/edit.js"></script>
           <script src="../JS/navMenu.js"></script>

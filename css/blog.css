@@ -73,3 +73,17 @@
     background-image: none;
   }
 }
+
+.editSection {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#editForm {
+  display: grid;
+  width: min(90%, 70rem);
+  gap: 2rem;
+}
