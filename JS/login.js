@@ -19,6 +19,7 @@ loginButton.addEventListener('click', function() {
     data = data.data;
     if (data && data.accessToken) {
       createSession(data.accessToken);
+      alert('Successfully logged in, redirecting..')
       window.location.href = '/'
     } else {loginInfo.textContent = 'Invalid email or password'};
   });

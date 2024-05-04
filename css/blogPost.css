@@ -6,7 +6,7 @@
   margin: auto;
   width: min(90%, 70rem);
   gap: 2rem;
-  padding-top: 5rem;
+  /* padding-top: 85px; */
 }
 
 #imageContainer img {
