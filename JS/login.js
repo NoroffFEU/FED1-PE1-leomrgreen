@@ -35,6 +35,7 @@ function createSession(accessToken) {
   const session = sessionStorage.getItem("session");
   if (!session) {
     sessionStorage.setItem("session", JSON.stringify(accessToken));
+    sessionStorage.setItem("isUserLoggedIn", true);
   }
 }
 

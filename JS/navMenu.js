@@ -1,5 +1,7 @@
 const burger = document.getElementById("burger");
 const navBar = document.getElementById("navList");
+const userIcon = document.getElementById("userIcon");
+const signOutBtn = document.getElementById("signOutBtn");
 
 burger.addEventListener("click", () => {
   navBar.classList.toggle("active");
@@ -49,3 +51,19 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 });
 
+function checkIfUserIsLoggedIn() {
+  const isLoggedIn = sessionStorage.getItem("isUserLoggedIn") === 'true';
+  if (isLoggedIn) {
+    userIcon.style.display = 'none';
+    signOutBtn.style.display = 'flex';
+  }
+}
+
+signOutBtn.addEventListener('click', function(){
+  sessionStorage.clear()
+  userIcon.style.display = 'flex';
+  signOutBtn.style.display = 'none';
+  window.location.href = '../'
+})
+
+checkIfUserIsLoggedIn();

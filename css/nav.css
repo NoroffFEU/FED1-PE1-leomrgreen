@@ -21,10 +21,11 @@ nav > ul {
   color: var(--sky-blue-300);
   gap: 0.5rem;
   z-index: 101;
+  align-items: center;
 }
 
 .logo i {
-  font-size: 50px;
+  font-size: 53px;
 }
 
 .logo h1 {
@@ -35,6 +36,7 @@ nav > ul {
 ul {
   list-style: none;
   font-size: 18px;
+  align-items: center;
 }
 
 ul i {
@@ -60,6 +62,17 @@ ul li:hover {
 
 .fa-moon,
 .fa-lightbulb {
+  cursor: pointer;
+}
+
+#signOutBtn {
+  display: none;
+  font-size: 18px;
+  border: none;
+  background-color: var(--sky-blue-300);
+  color: var(--white);
+  padding: 5px;
+  border-radius: 10px;
   cursor: pointer;
 }
 
