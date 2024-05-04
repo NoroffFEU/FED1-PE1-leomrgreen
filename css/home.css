@@ -136,6 +136,21 @@
   transition: 200ms ease;
 }
 
+.fa-wrench {
+  font-size: 40px;
+  background: none;
+  color: var(--sky-blue-400);
+  border: none;
+  cursor: pointer;
+  padding-top: 10px;
+  transition: 200ms ease;
+}
+
+.fa-wrench:hover {
+  scale: 1.4;
+  transition: 200ms ease;
+}
+
 @keyframes slideInLeft {
   from {
     transform: translateX(-300px);

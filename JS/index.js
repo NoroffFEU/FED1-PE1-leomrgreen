@@ -51,11 +51,19 @@ function generateBlogHtml(article) {
     window.location.href = `./post/?id=${article.id}`; 
   });
   
+  const editBtn = document.createElement('button');
+  editBtn.className = 'fa-solid fa-wrench'
+  editBtn.addEventListener('click',  () => {
+    window.location.href = `./post/edit.html?=${article.id}`;
+  })
 
   const articleHeading = document.createElement('h3');
   articleHeading.textContent = article.title;
 
-  gridCard.append(articleImage, articleHeading);
+  if (sessionStorage.getItem('isUserLoggedIn') === 'true') 
+    { 
+      gridCard.append(articleImage, articleHeading, editBtn); 
+      } else {gridCard.append(articleImage, articleHeading)};
 
   return gridCard;
 }
