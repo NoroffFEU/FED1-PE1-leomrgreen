@@ -40,7 +40,7 @@ function skeletonCarouselLoader() {
   }
 }
 
-function imageCarousel(carouselArray) {  // this function is from my previous JS1 submission. New thing with this is the new Date and slice method that I use to reach the latest 3 posts from my API array
+function imageCarousel(carouselArray) { 
     slidesContainer.innerHTML = '';
     for (let i = 0; i < carouselArray.length; i++) {
         const carouselImage = document.createElement('div');
@@ -53,13 +53,16 @@ function imageCarousel(carouselArray) {  // this function is from my previous JS
         carouselImage.innerHTML = 
         `<img src="${carouselArray[i].media.url}">
         <h2>${carouselArray[i].title}</h2>`;
+        carouselImage.addEventListener('click', () => {
+          window.location.href = `./post/?id=${carouselArray[i].id}`; 
+        });
         
         carouselImage.setAttribute('class', 'sliderItem');
         slidesContainer.appendChild(carouselImage);
     }
 }
 
-function showCurrentImage() {
+function showCurrentImage() {  // this function is from my previous JS1 submission. Image is shown based on current index state
   const images = slidesContainer.querySelectorAll('.sliderItem');
   images.forEach((div, index) => {
       if (index === currentIndex) {
