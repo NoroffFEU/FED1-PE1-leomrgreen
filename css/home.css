@@ -57,6 +57,18 @@
   );
 }
 
+.headline {
+  display: flex;
+  justify-content: center;
+  color: var(--white);
+  font-size: 40px;
+  padding: 1rem;
+}
+
+.headline h1 {
+  font-weight: 300;
+}
+
 #articleGrid {
   width: min(90%, 70rem);
   margin-inline: auto;
