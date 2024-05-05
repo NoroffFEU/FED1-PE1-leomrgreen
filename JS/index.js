@@ -73,6 +73,7 @@ async function main() {
     const response = await fetch(API_URL);
     const json = await response.json();
     let blogArticles = json.data;
+    blogArticles.sort((a, b) => new Date(b.created) - new Date(a.created));
     displayPosts(blogArticles.slice(0, 12));
     loadMoreBtn.addEventListener('click', () => {
       displayPosts(blogArticles);  // DOM-manipulation based on if we click on load more or not (slice method)
