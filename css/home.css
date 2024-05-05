@@ -78,6 +78,10 @@
   color: var(--sky-blue-400);
 }
 
+#articleGrid.active {
+  grid-template-columns: 1fr;
+}
+
 @media (max-width: 1000px) {
   #articleGrid {
     grid-template-columns: 1fr 1fr;
@@ -168,5 +172,31 @@
 
   to {
     transform: translateX(0);
+  }
+}
+
+.sort-grid {
+  color: var(--white);
+  display: flex;
+  justify-content: flex-end;
+  margin: 0;
+  font-size: 35px;
+  gap: 10px;
+}
+
+.sort-grid svg,
+.sort-grid i {
+  cursor: pointer;
+}
+
+.sortSection {
+  margin: auto;
+  width: min(90%, 70rem);
+  padding: 1rem;
+}
+
+@media (max-width: 1000px) {
+  .sort-grid {
+    display: none;
   }
 }

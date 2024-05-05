@@ -9,7 +9,7 @@ async function fetchEditBlogArticle(articleId) {
     const data = json.data;
     getDataToForm(data)
   } catch (error) {
-    console.error('nåt gick snett')
+    console.error('error')
   } finally {
     console.log('såja!')
   }
