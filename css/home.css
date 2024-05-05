@@ -179,13 +179,12 @@
   color: var(--white);
   display: flex;
   justify-content: flex-end;
-  margin: 0;
+  margin: 0 0 35px 0;
   font-size: 35px;
   gap: 10px;
 }
 
-.sort-grid svg,
-.sort-grid i {
+.sort-grid svg {
   cursor: pointer;
 }
 
