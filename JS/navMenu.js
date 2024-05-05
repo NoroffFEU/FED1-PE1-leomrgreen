@@ -2,6 +2,7 @@ const burger = document.getElementById("burger");
 const navBar = document.getElementById("navList");
 const userIcon = document.getElementById("userIcon");
 const signOutBtn = document.getElementById("signOutBtn");
+const createPostLink = document.getElementById('createInNav');
 
 burger.addEventListener("click", () => {
   navBar.classList.toggle("active");
@@ -67,3 +68,12 @@ signOutBtn.addEventListener('click', function(){
 })
 
 checkIfUserIsLoggedIn();
+
+function addCreatePostLinkToNavBar() {
+  const isLoggedIn = sessionStorage.getItem("isUserLoggedIn") === 'true';
+  if (isLoggedIn) {
+    createPostLink.style.display = 'flex';
+  } else {createPostLink.style.display = 'none';}
+}
+
+addCreatePostLinkToNavBar();
