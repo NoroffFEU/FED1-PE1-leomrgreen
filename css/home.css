@@ -102,7 +102,8 @@
 }
 
 .gridCard:hover {
-  scale: 1.1;
+  scale: 1.05;
+  box-shadow: 5px 5px 50px var(--sky-blue-600);
 }
 
 .gridCard h3 {
