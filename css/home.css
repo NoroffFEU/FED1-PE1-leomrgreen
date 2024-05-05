@@ -200,3 +200,40 @@
     display: none;
   }
 }
+
+.about-section {
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  background-image: url("../images/astronaut-spacewalk-moon-mixed-media.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.infoBox {
+  width: min(90%, 30rem);
+  color: var(--white);
+  background-color: rgba(59, 130, 246, 0.3);
+  display: grid;
+  padding: 1rem;
+  gap: 1rem;
+}
+
+.infoBox h5 {
+  font-size: 35px;
+}
+
+.infoBox p {
+  font-size: 15px;
+  font-weight: 300;
+}
+
+.infoBox a {
+  text-decoration: none;
+  color: var(--white);
+  background-color: var(--sky-blue-300);
+  font-size: 20px;
+}
