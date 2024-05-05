@@ -18,6 +18,8 @@ document.addEventListener("DOMContentLoaded", function() {
     .then(response => response.json())
     .then(data => {
       console.log(data.data);
+      alert('Account was successfully registered!')
+      window.location.href = '../'
     })
     .catch(error => {
       console.error('Error:', error);

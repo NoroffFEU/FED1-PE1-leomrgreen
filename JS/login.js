@@ -20,7 +20,7 @@ loginButton.addEventListener('click', function() {
     if (data && data.accessToken) {
       createSession(data.accessToken);
       alert('Successfully logged in, redirecting..')
-      window.location.href = '/'
+      window.location.href = '../'
     } else {loginInfo.textContent = 'Invalid email or password'};
   });
 });
