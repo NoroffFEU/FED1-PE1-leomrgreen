@@ -3,22 +3,20 @@ let currentIndex = 0;
 const API_URL = 'https://v2.api.noroff.dev/blog/posts/leomrgreen';
 const slideCards = document.querySelectorAll('.sliderItem');
 
-function getData() {
-  fetch(API_URL, { method: 'GET' })  
-      .then(response => {
-          if (!response.ok) {
-              throw new Error(`HTTP error! status: ${response.status}`);
-          }
-          return response.json();
-      })
-      .then(data => {
-          carouselArray = data.data.sort((a, b) => new Date(b.created) - new Date(a.created)).slice(0, 3);
-          imageCarousel(carouselArray);
-          skeletonCarouselLoader();
-      })
-      .catch(error => {
-          console.error('Error:', error);
-      });
+
+async function getData() {
+  try {
+    const response = await fetch(API_URL);
+    const json = await response.json();
+    //sorting the three latest posts
+    carouselArray = json.data.sort((a, b) => new Date(b.created) - new Date(a.created)).slice(0, 3); 
+    imageCarousel(carouselArray);
+    skeletonCarouselLoader();
+  } catch (error) {
+    console.error(error)
+  } finally {
+    console.log("it's working")
+  }
 }
 
 function skeletonCarouselLoader() {
@@ -45,13 +43,14 @@ function imageCarousel(carouselArray) {
   for (let i = 0; i < carouselArray.length; i++) {
       const carouselImage = document.createElement('div');
       carouselImage.className = 'sliderItem';
-      carouselImage.style.display = i === 0 ? 'flex' : 'none';  // Show first item, hide others initially
+      if (i === 0) {
+        carouselImage.style.display = 'flex';
+      } else {carouselImage.style.display = 'none'}
 
       carouselImage.innerHTML = `
-        <img src="${carouselArray[i].media.url}">
-        <h2>${carouselArray[i].title}</h2>
-        <button class="readMoreBtn" data-id="${carouselArray[i].id}">READ MORE</button>`;
-
+      <img src="${carouselArray[i].media.url}">
+      <h2>${carouselArray[i].title}</h2>
+      <button class="readMoreBtn" data-id="${carouselArray[i].id}">READ MORE</button>`;
       slidesContainer.appendChild(carouselImage);
   }
 
