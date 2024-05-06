@@ -82,6 +82,11 @@
   grid-template-columns: 1fr;
 }
 
+#articleGrid.active img {
+  width: 100%;
+  height: auto;
+}
+
 @media (max-width: 1000px) {
   #articleGrid {
     grid-template-columns: 1fr 1fr;
