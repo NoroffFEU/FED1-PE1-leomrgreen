@@ -39,12 +39,15 @@
 }
 
 #blogPostForm label,
-#blogPostForm h1 {
+#blogPostForm h1,
+#editForm h1 {
   color: var(--sky-blue-300);
+  text-align: center;
   font-weight: 800;
 }
 
-#blogPostForm h1 {
+#blogPostForm h1,
+#editForm h1 {
   font-size: 72px;
 }
 
@@ -72,18 +75,4 @@
   #createBod {
     background-image: none;
   }
-}
-
-.editSection {
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-#editForm {
-  display: grid;
-  width: min(90%, 70rem);
-  gap: 2rem;
 }

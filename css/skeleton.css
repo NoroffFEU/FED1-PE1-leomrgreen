@@ -6,7 +6,8 @@
 }
 
 .gridCard.loading img,
-.gridCard.loading h3 {
+.gridCard.loading h3,
+.gridCard.loading i {
   opacity: 0;
 }
 
@@ -18,7 +19,8 @@
 }
 
 .gridCard.loadingDark img,
-.gridCard.loadingDark h3 {
+.gridCard.loadingDark h3,
+.gridCard.loadingDark i {
   opacity: 0;
 }
 
@@ -31,7 +33,8 @@
 }
 
 .sliderItem.loading img,
-.sliderItem.loading > h2 {
+.sliderItem.loading h2,
+.sliderItem.loading button {
   opacity: 0;
 }
 
@@ -44,7 +47,8 @@
 }
 
 .sliderItem.loadingDark img,
-.sliderItem.loadingDark h2 {
+.sliderItem.loadingDark h2,
+.sliderItem.loadingDark button {
   opacity: 0;
 }
 

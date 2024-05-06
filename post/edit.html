@@ -49,6 +49,7 @@
         <body class="drkMode">
           <section class="editSection">
             <form id="editForm">
+              <h1>Edit Blog Post</h1>
               <input type="text" id="title" name="title" required />
               <textarea
                 id="body"
@@ -56,10 +57,16 @@
                 name="body"
                 rows="10"
               ></textarea>
+              <div class="imagePreview"></div>
               <input type="text" id="mediaUrl" name="mediaUrl" required />
               <input type="text" id="mediaAlt" name="mediaAlt" required />
-              <button id="updateBtn" type="submit">Update Post</button>
-              <button id="deleteBtn" type="button">DELETE POST</button>
+              <button id="updateBtn" type="submit">
+                EDIT POST <i class="fa-solid fa-user-pen"></i>
+              </button>
+              <button id="deleteBtn" type="button">
+                DELETE POST <i class="fa-solid fa-xmark"></i>
+                <i class="fa-solid fa-triangle-exclamation"></i>
+              </button>
             </form>
           </section>
 
@@ -68,5 +75,35 @@
         </body>
       </html>
     </main>
+    <footer class="drkMode">
+      <div class="footer-w">
+        <div class="foot-col social">
+          <h3>Get In Touch</h3>
+          <p class="drkMode">
+            Interested in collaborating or contributing to our blog? We'd love
+            to hear from you! Contact us at
+            <span class="contact-inq">lorem.ipsum@gmail.com</span>
+          </p>
+          <div class="social-media">
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-square-x-twitter"></i>
+            <i class="fa-brands fa-tiktok"></i>
+          </div>
+        </div>
+        <div class="foot-col read-more">
+          <div class="footer-card">
+            <i class="fa-solid fa-address-card"></i>
+            <h4>StarLog?</h4>
+            <a href="./about/index.html">ABOUT</a>
+          </div>
+          <div class="footer-card">
+            <i class="fa-solid fa-newspaper"></i>
+            <h4>Space-news?</h4>
+            <a href="./">BLOG</a>
+          </div>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>

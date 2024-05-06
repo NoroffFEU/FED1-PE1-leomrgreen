@@ -8,6 +8,7 @@ async function fetchEditBlogArticle(articleId) {
     const json = await response.json();
     const data = json.data;
     getDataToForm(data)
+    displayArticleBgImage(data)
   } catch (error) {
     console.error('error')
   } finally {
@@ -90,4 +91,11 @@ document.getElementById('deleteBtn').addEventListener('click', async (event) => 
 const isUserLoggedIn = localStorage.getItem('isUserLoggedIn') === 'true';
 if (!isUserLoggedIn) {
   window.location.href = '../'
+}
+
+function displayArticleBgImage(blogPost) {
+  const formSections = document.querySelectorAll('.imagePreview');
+  formSections.forEach(formSection => {
+    formSection.style.backgroundImage = `url('${blogPost.media.url}')`;
+  });
 }

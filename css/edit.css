@@ -1,0 +1,62 @@
+.editSection {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10rem 0 5rem 0;
+}
+
+.imagePreview {
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 50%;
+  height: 300px;
+  margin: auto;
+}
+
+#editForm {
+  display: grid;
+  width: min(90%, 70rem);
+  gap: 2rem;
+}
+
+#editForm > input {
+  height: 35px;
+  padding: 0 1rem 0 1rem;
+  border: none;
+  border: 2px solid var(--sky-blue-300);
+  outline: none;
+  border-radius: 10px;
+}
+
+.descripBod {
+  padding: 1rem;
+  border: 2px solid var(--sky-blue-300);
+  outline: none;
+  border-radius: 10px;
+}
+
+#deleteBtn,
+#updateBtn {
+  border: none;
+  width: 50%;
+  margin: auto;
+  padding: 1rem;
+  font-size: 20px;
+  background-color: var(--sky-blue-300);
+  color: var(--white);
+  border-radius: 10px;
+  transition: 200ms ease;
+}
+
+#deleteBtn:hover,
+#updateBtn:hover {
+  scale: 1.1;
+  cursor: pointer;
+}
+
+.fa-triangle-exclamation {
+  color: red;
+  display: none;
+}
