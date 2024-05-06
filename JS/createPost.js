@@ -50,10 +50,3 @@ function createBlogPost(title, body, mediaUrl, mediaAlt) {
   });
 }
 
-
-document.getElementById('deleteButton').addEventListener('click', function() {
-  const confirmDelete = confirm("Are you sure you want to delete this post?");
-  if (confirmDelete) {
-      deleteBlogArticle(articleId);
-  }
-});
