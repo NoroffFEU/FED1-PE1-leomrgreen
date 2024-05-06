@@ -4,6 +4,70 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link rel="stylesheet" href="../css/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
   </head>
-  <body></body>
+  <body class="drkMode">
+    <header>
+      <nav class="drkMode">
+        <div>
+          <a class="logo" href="../"
+            ><i class="fa-solid fa-user-astronaut"></i>
+            <h1>StarLog</h1></a
+          >
+        </div>
+        <ul id="navList" class="drkMode">
+          <li id="createInNav"><a href="./post/create.html">Create</a></li>
+          <li><a href="../">Blog</a></li>
+          <li><a href="../about">About</a></li>
+          <li><i class="fa-regular fa-lightbulb" id="drkModeIcon"></i></li>
+          <li>
+            <a href="./account/login.html"
+              ><i class="fa-solid fa-user" id="userIcon"></i
+            ></a>
+            <button id="signOutBtn">SIGN OUT</button>
+          </li>
+        </ul>
+        <i class="fa-solid fa-bars" id="burger"></i>
+      </nav>
+    </header>
+    <main></main>
+    <footer class="drkMode">
+      <div class="footer-w">
+        <div class="foot-col social">
+          <h3>Get In Touch</h3>
+          <p class="drkMode">
+            Interested in collaborating or contributing to our blog? We'd love
+            to hear from you! Contact us at
+            <span class="contact-inq">lorem.ipsum@gmail.com</span>
+          </p>
+          <div class="social-media">
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-square-x-twitter"></i>
+            <i class="fa-brands fa-tiktok"></i>
+          </div>
+        </div>
+        <div class="foot-col read-more">
+          <div class="footer-card">
+            <i class="fa-solid fa-address-card"></i>
+            <h4>StarLog?</h4>
+            <a href="../about/">ABOUT</a>
+          </div>
+          <div class="footer-card">
+            <i class="fa-solid fa-newspaper"></i>
+            <h4>Space-news?</h4>
+            <a href="../">BLOG</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="../JS/navMenu.js"></script>
+  </body>
 </html>
