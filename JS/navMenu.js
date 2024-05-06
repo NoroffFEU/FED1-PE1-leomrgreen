@@ -64,7 +64,7 @@ signOutBtn.addEventListener('click', function(){
   sessionStorage.clear()
   userIcon.style.display = 'flex';
   signOutBtn.style.display = 'none';
-  window.location.href = '../'
+  location.reload();
 })
 
 checkIfUserIsLoggedIn();
