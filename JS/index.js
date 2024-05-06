@@ -52,7 +52,7 @@ function generateBlogHtml(article) {
   });
   
   const editBtn = document.createElement('button');
-  editBtn.className = 'fa-solid fa-wrench'
+  editBtn.className = 'fa-regular fa-pen-to-square'
   editBtn.addEventListener('click',  () => {
     window.location.href = `./post/edit.html?id=${article.id}`;
   })
@@ -62,7 +62,7 @@ function generateBlogHtml(article) {
 
   if (localStorage.getItem('isUserLoggedIn') === 'true') 
     { 
-      gridCard.append(articleImage, articleHeading, editBtn); 
+      gridCard.append(articleImage, articleHeading, editBtn); // adds edit-tool icon if user is logged in
       } else {gridCard.append(articleImage, articleHeading)};
 
   return gridCard;

@@ -146,7 +146,7 @@
   transition: 200ms ease;
 }
 
-.fa-wrench {
+.fa-pen-to-square {
   font-size: 40px;
   background: none;
   color: var(--sky-blue-400);
@@ -156,7 +156,7 @@
   transition: 200ms ease;
 }
 
-.fa-wrench:hover {
+.fa-pen-to-square:hover {
   scale: 1.4;
   transition: 200ms ease;
 }
