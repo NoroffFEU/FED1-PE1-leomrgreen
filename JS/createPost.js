@@ -15,7 +15,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
 function createBlogPost(title, body, mediaUrl, mediaAlt) {
   const url = 'https://v2.api.noroff.dev/blog/posts/leomrgreen';
-  const accessToken = JSON.parse(sessionStorage.getItem("session")); 
+  const accessToken = JSON.parse(localStorage.getItem("session")); 
 
 
   const postData = {

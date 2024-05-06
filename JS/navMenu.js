@@ -53,7 +53,7 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 function checkIfUserIsLoggedIn() {
-  const isLoggedIn = sessionStorage.getItem("isUserLoggedIn") === 'true';
+  const isLoggedIn = localStorage.getItem("isUserLoggedIn") === 'true';
   if (isLoggedIn) {
     userIcon.style.display = 'none';
     signOutBtn.style.display = 'flex';
@@ -61,7 +61,7 @@ function checkIfUserIsLoggedIn() {
 }
 
 signOutBtn.addEventListener('click', function(){
-  sessionStorage.clear()
+  localStorage.clear()
   userIcon.style.display = 'flex';
   signOutBtn.style.display = 'none';
   location.reload();
@@ -70,7 +70,7 @@ signOutBtn.addEventListener('click', function(){
 checkIfUserIsLoggedIn();
 
 function addCreatePostLinkToNavBar() {
-  const isLoggedIn = sessionStorage.getItem("isUserLoggedIn") === 'true';
+  const isLoggedIn = localStorage.getItem("isUserLoggedIn") === 'true';
   if (isLoggedIn) {
     createPostLink.style.display = 'flex';
   } else {createPostLink.style.display = 'none';}

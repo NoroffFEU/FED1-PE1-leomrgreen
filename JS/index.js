@@ -60,7 +60,7 @@ function generateBlogHtml(article) {
   const articleHeading = document.createElement('h3');
   articleHeading.textContent = article.title;
 
-  if (sessionStorage.getItem('isUserLoggedIn') === 'true') 
+  if (localStorage.getItem('isUserLoggedIn') === 'true') 
     { 
       gridCard.append(articleImage, articleHeading, editBtn); 
       } else {gridCard.append(articleImage, articleHeading)};

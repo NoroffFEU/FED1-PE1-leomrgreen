@@ -1,6 +1,6 @@
 const params = new URLSearchParams(window.location.search);
 const articleId = params.get('id');
-const accessToken = JSON.parse(sessionStorage.getItem("session")); 
+const accessToken = JSON.parse(localStorage.getItem("session")); 
 
 async function fetchEditBlogArticle(articleId) {
   try {

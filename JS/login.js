@@ -27,15 +27,15 @@ loginButton.addEventListener('click', function() {
 
 
 function getSession() {
-  const session = JSON.parse(sessionStorage.getItem("session"));
+  const session = JSON.parse(localStorage.getItem("session"));
   return session;
 }
 
 function createSession(accessToken) {
-  const session = sessionStorage.getItem("session");
+  const session = localStorage.getItem("session");
   if (!session) {
-    sessionStorage.setItem("session", JSON.stringify(accessToken));
-    sessionStorage.setItem("isUserLoggedIn", true);
+    localStorage.setItem("session", JSON.stringify(accessToken));
+    localStorage.setItem("isUserLoggedIn", true);
   }
 }
 
