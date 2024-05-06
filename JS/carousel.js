@@ -59,7 +59,7 @@ function imageCarousel(carouselArray) {
   document.querySelectorAll('.readMoreBtn').forEach(button => {
       button.addEventListener('click', function() {
           const postId = this.getAttribute('data-id');
-          window.location.href = `/post/?id=${postId}`;  
+          window.location.href = `./post/?id=${postId}`;  
       });
   });
 }
