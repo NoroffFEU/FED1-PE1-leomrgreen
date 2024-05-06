@@ -1,12 +1,13 @@
 #articleWrapper {
   min-height: 100vh;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   margin: auto;
   width: min(90%, 70rem);
   gap: 2rem;
-  /* padding-top: 85px; */
+  padding: 5rem 2rem 3rem 2rem;
 }
 
 #imageContainer img {
@@ -18,7 +19,7 @@
   text-align: center;
   display: grid;
   gap: 1.5rem;
-  max-width: 500px;
+  max-width: 100%;
   color: var(--white);
 }
 
