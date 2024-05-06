@@ -202,7 +202,7 @@
 }
 
 .about-section {
-  height: 80vh;
+  height: 50vh;
   display: flex;
   justify-content: center;
   text-align: center;
@@ -211,6 +211,12 @@
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
+}
+
+@media (max-width: 850px) {
+  .about-section {
+    background-attachment: local;
+  }
 }
 
 .infoBox {
