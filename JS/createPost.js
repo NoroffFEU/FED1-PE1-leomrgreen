@@ -50,3 +50,11 @@ function createBlogPost(title, body, mediaUrl, mediaAlt) {
   });
 }
 
+
+const isUserLoggedIn = localStorage.getItem('isUserLoggedIn') === 'true';
+
+if (!isUserLoggedIn) {
+  window.location.href = '../'
+}
+
+

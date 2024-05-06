@@ -85,3 +85,9 @@ document.getElementById('deleteBtn').addEventListener('click', async (event) => 
     }
   }
 });
+
+
+const isUserLoggedIn = localStorage.getItem('isUserLoggedIn') === 'true';
+if (!isUserLoggedIn) {
+  window.location.href = '../'
+}
