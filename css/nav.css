@@ -22,6 +22,7 @@ nav > ul {
   gap: 0.5rem;
   z-index: 101;
   align-items: center;
+  text-decoration: none;
 }
 
 .logo i {
