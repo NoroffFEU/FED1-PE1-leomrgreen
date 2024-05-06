@@ -58,8 +58,8 @@ function imageCarousel(carouselArray) {
   // Add event listeners to each button after they have been added to the DOM
   document.querySelectorAll('.readMoreBtn').forEach(button => {
       button.addEventListener('click', function() {
-          const postId = this.getAttribute('data-id');
-          window.location.href = `./post/?id=${postId}`;  
+          const articleId = this.getAttribute('data-id');
+          window.location.href = `./post/?id=${articleId}`;  
       });
   });
 }
