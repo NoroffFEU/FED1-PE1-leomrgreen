@@ -30,8 +30,10 @@ function updateCardStyles() {
   const isLightMode = localStorage.getItem('lightMode') === 'true';
   cards.forEach(card => {
     if (isLightMode) {
-      card.style.backgroundColor = '#eee';
-    } else {card.style.backgroundColor = '#3a3a3a'}
+      card.style.cssText = 'background-color: #eee; color; #0f172a'
+    } else {
+      card.style.cssText = 'background-color: #1e293b; color: #eee';
+    }
   });
 }
 
@@ -42,7 +44,7 @@ drkModeBtn.addEventListener('click', () => {
 
 function generateBlogHtml(article) {
   const gridCard = document.createElement('div');
-  gridCard.className = 'gridCard';
+  gridCard.className = 'gridCard drkMode';
   
   const articleImage = document.createElement('img');
   articleImage.src = article.media.url;

@@ -45,7 +45,7 @@
   text-align: center;
   justify-content: center;
   font-size: 30px;
-  color: var(--sky-blue-400);
+  color: var(--sky-blue-300);
   text-wrap: nowrap;
   gap: 2rem;
 }

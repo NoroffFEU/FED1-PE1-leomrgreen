@@ -6,7 +6,7 @@
 }
 
 #createBod {
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
   background-image: url("../images/astro-inspace.png");
@@ -29,6 +29,7 @@
   padding: 0.5rem;
   width: 100%;
   border-radius: 10px;
+  border: 2px solid var(--sky-blue-300);
 }
 
 #blogPostForm > textarea {
@@ -36,6 +37,7 @@
   width: 100%;
   resize: none;
   border-radius: 10px;
+  border: 2px solid var(--sky-blue-300);
 }
 
 #blogPostForm label,

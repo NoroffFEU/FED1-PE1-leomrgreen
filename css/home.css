@@ -75,7 +75,6 @@
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 2rem;
-  color: var(--sky-blue-400);
 }
 
 #articleGrid.active {
@@ -104,6 +103,7 @@
   padding: 2rem;
   border-radius: 10px;
   transition: 200ms ease;
+  color: var(--dark-grey-100);
 }
 
 .gridCard:hover {
@@ -149,7 +149,7 @@
 .fa-pen-to-square {
   font-size: 40px;
   background: none;
-  color: var(--sky-blue-400);
+  color: var(--sky-blue-300);
   border: none;
   cursor: pointer;
   padding-top: 10px;
