@@ -5,6 +5,8 @@
   grid-template-columns: 1fr 1fr;
   margin: auto;
   place-content: center;
+  background-image: url("../images/Counting stars-pana.png");
+  background-size: cover;
   align-items: center;
   text-align: center;
   color: var(--white);
@@ -29,10 +31,6 @@
 }
 
 @media (max-width: 1000px) {
-  .banner {
-    grid-template-columns: 1fr;
-  }
-
   .banner h1 {
     font-size: 58px;
   }
@@ -43,7 +41,13 @@
   }
 
   .banner img {
-    max-width: 300px;
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 588px) {
+  .banner {
+    grid-template-columns: 1fr;
   }
 }
 
