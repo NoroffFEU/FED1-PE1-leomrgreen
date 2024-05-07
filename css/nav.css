@@ -18,7 +18,7 @@ nav > ul {
 
 .logo {
   display: flex;
-  color: var(--sky-blue-300);
+  color: var(--white);
   gap: 0.5rem;
   z-index: 101;
   align-items: center;
@@ -29,7 +29,7 @@ nav > ul {
   font-size: 53px;
 }
 
-.logo h1 {
+.logo span {
   font-size: 43px;
   font-weight: 300;
 }

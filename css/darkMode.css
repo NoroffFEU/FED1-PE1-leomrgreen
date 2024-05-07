@@ -6,7 +6,9 @@
 
 .lightMode > ul a,
 .lightMode > ul i,
-.lightMode > p {
+.lightMode > p,
+.lightMode > i,
+.lightMode > span {
   color: var(--sky-blue-500);
   background: none;
 }
