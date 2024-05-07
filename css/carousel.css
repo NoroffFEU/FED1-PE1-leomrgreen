@@ -49,6 +49,9 @@
   text-wrap: nowrap;
   gap: 2rem;
 }
+.sliderItem h2 {
+  font-weight: 300;
+}
 
 .sliderItem img {
   width: min(100%, 550px);
