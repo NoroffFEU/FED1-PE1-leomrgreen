@@ -22,6 +22,8 @@
 
 @import "./edit.css";
 
+@import "./about.css";
+
 * {
   padding: 0;
   margin: 0;

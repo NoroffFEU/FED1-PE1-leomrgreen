@@ -1,0 +1,93 @@
+.about-banner {
+  height: 50vh;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  width: min(95%, 85rem);
+  padding: 10rem 1rem 5rem 1rem;
+  margin: auto;
+}
+
+.about-banner img {
+  max-width: 100%;
+}
+
+.about-banner h1 {
+  color: var(--sky-blue-300);
+  font-size: 72px;
+}
+
+@media (max-width: 800px) {
+  .about-banner {
+    grid-template-columns: 1fr;
+  }
+}
+
+.about-grid-container {
+  display: grid;
+  width: min(100%, 85rem);
+  grid-template-columns: 1fr;
+  margin: auto;
+  gap: 2rem;
+  padding: 5rem 1rem 5rem 1rem;
+}
+
+.about-card {
+  background-color: var(--dark-grey-200);
+  color: var(--white);
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 0px 5px 10px var(--black);
+}
+
+.about-card h5 {
+  font-size: 17px;
+}
+
+.about-card span {
+  font-size: 15px;
+  color: rgb(185, 185, 185);
+}
+
+blockquote {
+  font-size: 15px;
+  font-weight: 400;
+  color: rgb(212, 212, 212);
+}
+
+.fa-quote-right {
+  align-self: flex-end;
+}
+
+@media (min-width: 1000px) {
+  .about-grid-container {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+  }
+
+  .about-card:first-child,
+  .about-card:nth-child(2) {
+    grid-row: span 2;
+  }
+
+  .about-card:nth-child(3) {
+    grid-column-start: 3;
+    grid-row: 1;
+  }
+
+  .about-card:nth-child(4) {
+    grid-column-start: 4;
+    grid-row: span 2;
+  }
+
+  .about-card:nth-child(5) {
+    grid-column: span 2;
+    grid-row: 3;
+  }
+
+  .about-card:nth-child(6) {
+    grid-row: span 2;
+    grid-column-start: 3;
+  }
+}
