@@ -60,9 +60,9 @@ function checkIfUserIsLoggedIn() {
   }
 }
 
-signOutBtn.addEventListener('click', function(){
+signOutBtn.addEventListener('click', function(){ //removes accessToken and custom isUserLoggedIn key
   localStorage.removeItem('isUserLoggedIn');
-  localStorage.removeItem('session')
+  localStorage.removeItem('session') 
   userIcon.style.display = 'flex';
   signOutBtn.style.display = 'none';
   location.reload();
