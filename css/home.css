@@ -232,6 +232,7 @@
   display: grid;
   padding: 1rem;
   gap: 1rem;
+  border-radius: 10px;
 }
 
 .infoBox h5 {
@@ -248,4 +249,12 @@
   color: var(--white);
   background-color: var(--sky-blue-300);
   font-size: 20px;
+  padding: 10px;
+  border-radius: 10px;
+  transition: 200ms ease;
+}
+
+.infoBox a:hover {
+  background-color: var(--sky-blue-600);
+  transition: 200ms ease;
 }

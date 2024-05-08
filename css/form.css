@@ -31,7 +31,9 @@ input::placeholder {
   background-color: var(--sky-blue-600);
   border: 1px solid var(--white);
   color: var(--white);
+  font-size: 17px;
   cursor: pointer;
+  align-items: center;
 }
 
 .account-form > button:hover {
