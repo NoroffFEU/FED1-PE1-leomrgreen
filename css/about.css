@@ -3,8 +3,10 @@
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   width: min(95%, 85rem);
-  padding: 10rem 1rem 5rem 1rem;
+  padding: 5rem 1rem 5rem 1rem;
   margin: auto;
+  align-items: center;
+  text-align: center;
 }
 
 .about-banner img {
