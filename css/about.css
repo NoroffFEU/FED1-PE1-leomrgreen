@@ -32,7 +32,6 @@
 }
 
 .about-card {
-  background-color: var(--dark-grey-200);
   color: var(--white);
   display: flex;
   flex-direction: column;
@@ -47,13 +46,13 @@
 
 .about-card span {
   font-size: 15px;
-  color: rgb(185, 185, 185);
+  color: var(--sky-blue-500);
 }
 
 blockquote {
   font-size: 15px;
   font-weight: 400;
-  color: rgb(212, 212, 212);
+  color: var(--white-100);
 }
 
 .fa-quote-right {
