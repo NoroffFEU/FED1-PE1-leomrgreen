@@ -55,12 +55,19 @@
 
 #blogPostForm button {
   background-color: var(--sky-blue-300);
-  height: 30px;
+  font-size: 20px;
+  padding: 10px;
   border: none;
   border-radius: 10px;
   width: 50%;
   cursor: pointer;
   color: var(--white);
+  transition: 200ms ease;
+}
+
+#blogPostForm button:hover {
+  background-color: var(--sky-blue-600);
+  transition: 200ms ease;
 }
 
 @media (max-width: 1000px) {
