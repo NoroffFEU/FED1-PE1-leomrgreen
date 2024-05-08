@@ -61,7 +61,8 @@ function checkIfUserIsLoggedIn() {
 }
 
 signOutBtn.addEventListener('click', function(){
-  localStorage.clear()
+  localStorage.removeItem('isUserLoggedIn');
+  localStorage.removeItem('session')
   userIcon.style.display = 'flex';
   signOutBtn.style.display = 'none';
   location.reload();
