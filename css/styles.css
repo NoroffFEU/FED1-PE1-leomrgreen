@@ -24,6 +24,8 @@
 
 @import "./about.css";
 
+@import "./loader.css";
+
 * {
   padding: 0;
   margin: 0;
