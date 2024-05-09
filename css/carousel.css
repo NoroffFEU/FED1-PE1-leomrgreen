@@ -54,8 +54,8 @@
 }
 
 .sliderItem img {
-  width: min(100%, 550px);
-  max-height: 350px;
+  max-width: 550px;
+  max-height: 550px;
   margin-inline: auto;
   border-radius: 1rem;
 }
@@ -84,6 +84,7 @@
   }
 
   .sliderItem img {
-    height: 230px;
+    max-height: 250px;
+    max-width: 250px;
   }
 }

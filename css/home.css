@@ -119,7 +119,7 @@
 
 .gridCard img {
   width: min(100%, 350px);
-  height: 250px;
+  height: auto;
   border-radius: 10px;
   cursor: pointer;
 }
