@@ -6,7 +6,6 @@ const createPostLink = document.getElementById('createInNav');
 
 burger.addEventListener("click", () => {
   navBar.classList.toggle("active");
-
   if (navBar.classList.contains("active")) {
     burger.className = "fa-solid fa-x";
   } else {
@@ -60,7 +59,7 @@ function checkIfUserIsLoggedIn() {
   }
 }
 
-signOutBtn.addEventListener('click', function(){ //removes accessToken and custom isUserLoggedIn key
+signOutBtn.addEventListener('click', function signOut(){ //removes accessToken and custom isUserLoggedIn key
   localStorage.removeItem('isUserLoggedIn');
   localStorage.removeItem('session') 
   userIcon.style.display = 'flex';

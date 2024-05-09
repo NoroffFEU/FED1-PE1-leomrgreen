@@ -72,3 +72,7 @@ input,
 textarea {
   outline: none;
 }
+
+#loginInfo {
+  font-size: 20px;
+}

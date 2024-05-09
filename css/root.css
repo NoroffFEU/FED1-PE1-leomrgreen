@@ -12,7 +12,7 @@
   --card-gradient: linear-gradient(
     125deg,
     rgba(15, 23, 42, 1) 0%,
-    rgba(30, 41, 59, 1) 48%,
+    rgb(1, 36, 92) 48%,
     rgba(15, 23, 42, 1) 100%
   );
   --card-gradient-light: linear-gradient(

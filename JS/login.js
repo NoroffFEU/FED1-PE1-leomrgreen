@@ -1,3 +1,5 @@
+import { loadingScreen } from "./loader.mjs";
+
 const loginButton = document.getElementById('loginButton');
 const loginInfo = document.getElementById('loginInfo');
 
@@ -19,8 +21,11 @@ loginButton.addEventListener('click', function() {
     data = data.data;
     if (data && data.accessToken) {
       createSession(data.accessToken);
-      alert('Successfully logged in!')
+      loadingScreen();
+      setTimeout(() => {
+      // alert('Successfully logged in!')
       window.location.href = '../'
+      }, 1000);
     } else {loginInfo.textContent = 'Invalid email or password'};
   });
 });

@@ -13,6 +13,16 @@
   max-width: 100%;
 }
 
+.namephoto {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.namephoto img {
+  width: 40px;
+}
+
 .about-banner h1 {
   color: var(--sky-blue-300);
   font-size: 72px;
