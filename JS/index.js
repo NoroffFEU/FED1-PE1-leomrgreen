@@ -1,6 +1,11 @@
+import { gridBtn, gridLayout } from "./gridFilter.mjs";
 const API_URL = 'https://v2.api.noroff.dev/blog/posts/leomrgreen';
 const loadMoreBtn = document.getElementById('loadMoreBtn');
 const drkModeBtn = document.getElementById('drkModeIcon');
+
+gridBtn.addEventListener('click', ()=> {
+  gridLayout.classList.toggle('active');
+})
 
 function displayPosts(blogArticles) {
   const blogContainer = document.getElementById('articleGrid');
