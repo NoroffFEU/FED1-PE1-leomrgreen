@@ -11,6 +11,13 @@
 
 .about-banner img {
   max-width: 100%;
+  animation: slideInRight 1s ease-in;
+  z-index: -2;
+}
+
+.about-banner h1 {
+  animation: slideInLeft 1s ease-in;
+  z-index: -2;
 }
 
 .namephoto {
