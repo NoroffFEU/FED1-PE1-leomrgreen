@@ -231,6 +231,7 @@
   color: var(--white);
   background-color: rgba(59, 130, 246, 0.3);
   backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
   display: grid;
   padding: 1rem;
   gap: 1rem;
