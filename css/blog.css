@@ -64,19 +64,3 @@
   color: var(--white);
   transition: 200ms ease;
 }
-
-@media (max-width: 1000px) {
-  #blogPostForm h1 {
-    font-size: 52px;
-  }
-}
-
-@media (max-width: 500px) {
-  #blogPostForm h1 {
-    font-size: 38px;
-  }
-
-  #createBod {
-    background-image: none;
-  }
-}

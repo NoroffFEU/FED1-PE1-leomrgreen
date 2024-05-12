@@ -19,18 +19,6 @@
   height: auto;
 }
 
-@media (max-width: 1000px) {
-  #articleGrid {
-    grid-template-columns: 1fr 1fr;
-  }
-}
-
-@media (max-width: 700px) {
-  #articleGrid {
-    grid-template-columns: 1fr;
-  }
-}
-
 .gridCard {
   text-align: center;
   padding: 2rem;

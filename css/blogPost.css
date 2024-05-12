@@ -31,13 +31,3 @@
 #descContainer h1 {
   color: var(--sky-blue-300);
 }
-
-@media (max-width: 1000px) {
-  #articleWrapper {
-    flex-direction: column;
-  }
-
-  #imageContainer img {
-    max-width: 100%;
-  }
-}

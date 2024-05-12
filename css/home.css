@@ -28,27 +28,6 @@
   animation: slideInRight 1s ease-in;
 }
 
-@media (max-width: 1000px) {
-  .banner h1 {
-    font-size: 58px;
-  }
-
-  .banner h2 {
-    text-wrap: wrap;
-    font-size: 30px;
-  }
-
-  .banner img {
-    max-width: 100%;
-  }
-}
-
-@media (max-width: 588px) {
-  .banner {
-    grid-template-columns: 1fr;
-  }
-}
-
 .banner-break {
   width: 100%;
   height: 2.5rem;
@@ -106,12 +85,6 @@
   padding: 1rem;
 }
 
-@media (max-width: 1000px) {
-  .sort-grid {
-    display: none;
-  }
-}
-
 .about-section {
   height: 50vh;
   display: flex;
@@ -122,12 +95,6 @@
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
-}
-
-@media (max-width: 850px) {
-  .about-section {
-    background-attachment: local;
-  }
 }
 
 .infoBox {

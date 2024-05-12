@@ -87,15 +87,3 @@ footer h4 {
 .social i {
   color: var(--sky-blue-300);
 }
-
-@media (max-width: 1200px) {
-  .footer-w {
-    grid-template-columns: 1fr;
-  }
-}
-
-@media (max-width: 950px) {
-  .read-more {
-    grid-template-columns: 1fr;
-  }
-}

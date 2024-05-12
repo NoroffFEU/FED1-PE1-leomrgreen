@@ -12,16 +12,3 @@
   color: var(--sky-blue-500);
   background: none;
 }
-
-@media (max-width: 1000px) {
-  .lightMode > ul a,
-  .lightMode > ul i {
-    color: var(--white);
-  }
-}
-
-@media (min-width: 1000px) {
-  .lightMode > ul {
-    background: none;
-  }
-}

@@ -35,12 +35,6 @@
   font-size: 72px;
 }
 
-@media (max-width: 800px) {
-  .about-banner {
-    grid-template-columns: 1fr;
-  }
-}
-
 .about-grid-container {
   display: grid;
   width: min(100%, 85rem);
@@ -76,36 +70,4 @@ blockquote {
 
 .fa-quote-right {
   align-self: flex-end;
-}
-
-@media (min-width: 1000px) {
-  .about-grid-container {
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(3, 1fr);
-  }
-
-  .about-card:first-child,
-  .about-card:nth-child(2) {
-    grid-row: span 2;
-  }
-
-  .about-card:nth-child(3) {
-    grid-column-start: 3;
-    grid-row: 1;
-  }
-
-  .about-card:nth-child(4) {
-    grid-column-start: 4;
-    grid-row: span 2;
-  }
-
-  .about-card:nth-child(5) {
-    grid-column: span 2;
-    grid-row: 3;
-  }
-
-  .about-card:nth-child(6) {
-    grid-row: span 2;
-    grid-column-start: 3;
-  }
 }

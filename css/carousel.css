@@ -72,14 +72,3 @@
   border-radius: 10px;
   transition: 200ms ease;
 }
-
-@media (max-width: 700px) {
-  .sliderItem {
-    font-size: 20px;
-  }
-
-  .sliderItem img {
-    max-height: 250px;
-    max-width: 250px;
-  }
-}
