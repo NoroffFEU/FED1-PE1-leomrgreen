@@ -51,16 +51,18 @@
 }
 
 @media (max-width: 700px) {
-  #articleGrid {
-    grid-template-columns: 1fr;
-    .sliderItem {
-      font-size: 20px;
-    }
+  .sliderItem {
+    font-size: 20px;
+  }
 
-    .sliderItem img {
-      max-height: 250px;
-      max-width: 250px;
-    }
+  .sliderItem img {
+    max-height: 250px;
+    max-width: 250px;
+  }
+
+  #articleGrid {
+    display: flex;
+    flex-direction: column;
   }
 }
 
