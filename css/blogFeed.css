@@ -24,19 +24,17 @@
 
 .sort-grid {
   color: var(--white);
-}
-
-.sort-grid i {
+  display: flex;
   display: flex;
   justify-content: flex-end;
   margin: 0 0 35px 0;
   gap: 10px;
+  font-size: 35px;
 }
-
-.sort-grid svg,
 .sort-grid i {
   cursor: pointer;
   transition: 200ms ease;
+  display: flex;
 }
 
 .sort-grid i:hover {
