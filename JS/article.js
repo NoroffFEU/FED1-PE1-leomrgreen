@@ -9,9 +9,8 @@ async function fetchBlogArticle(articleId) {
     displayArticle(blogArticle);
     initializeSkeletonLoader();
   } catch (error) {
-    console.error('nåt gick snett')
+    console.error('Article Not Found')
   } finally {
-    console.log('såja!')
     hideSkeletonLoader();
   }
 }
