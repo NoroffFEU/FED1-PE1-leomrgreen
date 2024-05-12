@@ -4,12 +4,6 @@
   }
 }
 
-@media (max-width: 1000px) {
-  #blogPostForm h1 {
-    font-size: 52px;
-  }
-}
-
 @media (max-width: 500px) {
   #blogPostForm h1 {
     font-size: 38px;
@@ -50,38 +44,23 @@
     grid-row: span 2;
     grid-column-start: 3;
   }
-}
 
-@media (max-width: 1000px) {
-  #articleGrid {
-    grid-template-columns: 1fr 1fr;
+  .lightMode > ul {
+    background: none;
   }
 }
 
 @media (max-width: 700px) {
   #articleGrid {
     grid-template-columns: 1fr;
-  }
-}
+    .sliderItem {
+      font-size: 20px;
+    }
 
-@media (max-width: 1000px) {
-  #articleWrapper {
-    flex-direction: column;
-  }
-
-  #imageContainer img {
-    max-width: 100%;
-  }
-}
-
-@media (max-width: 700px) {
-  .sliderItem {
-    font-size: 20px;
-  }
-
-  .sliderItem img {
-    max-height: 250px;
-    max-width: 250px;
+    .sliderItem img {
+      max-height: 250px;
+      max-width: 250px;
+    }
   }
 }
 
@@ -90,39 +69,10 @@
   .lightMode > ul i {
     color: var(--white);
   }
-}
-
-@media (min-width: 1000px) {
-  .lightMode > ul {
-    background: none;
-  }
-}
-
-@media (max-width: 1200px) {
-  .footer-w {
-    grid-template-columns: 1fr;
-  }
-}
-
-@media (max-width: 950px) {
-  .read-more {
-    grid-template-columns: 1fr;
-  }
-}
-
-@media (max-width: 850px) {
-  .about-section {
-    background-attachment: local;
-  }
-}
-
-@media (max-width: 1000px) {
   .sort-grid {
     display: none;
   }
-}
 
-@media (max-width: 1000px) {
   .banner h1 {
     font-size: 58px;
   }
@@ -135,15 +85,7 @@
   .banner img {
     max-width: 100%;
   }
-}
 
-@media (max-width: 588px) {
-  .banner {
-    grid-template-columns: 1fr;
-  }
-}
-
-@media (max-width: 1000px) {
   #burger {
     display: block;
   }
@@ -178,5 +120,48 @@
 
   #navList.active {
     left: 0;
+  }
+
+  #articleWrapper {
+    flex-direction: column;
+  }
+
+  #imageContainer img {
+    max-width: 100%;
+  }
+
+  #articleGrid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .lightMode > ul a,
+  .lightMode > ul i {
+    color: var(--white);
+  }
+
+  #blogPostForm h1 {
+    font-size: 52px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .footer-w {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 950px) {
+  .read-more {
+    grid-template-columns: 1fr;
+  }
+
+  .about-section {
+    background-attachment: local;
+  }
+}
+
+@media (max-width: 588px) {
+  .banner {
+    grid-template-columns: 1fr;
   }
 }
