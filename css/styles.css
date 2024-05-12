@@ -45,3 +45,8 @@ body {
 button {
   font-family: "Oswald", sans-serif;
 }
+
+button:hover {
+  background-color: var(--sky-blue-600);
+  transition: 200ms ease;
+}

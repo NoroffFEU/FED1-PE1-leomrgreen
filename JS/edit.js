@@ -57,6 +57,7 @@ document.getElementById('editForm').addEventListener('submit', function (event) 
   })
   .catch(error => {
       console.error('Error:', error);
+      alert('Failed to edit post: ' + error)
   });
 });
 
@@ -79,7 +80,8 @@ document.getElementById('deleteBtn').addEventListener('click', async (event) => 
       }
       alert('Post deleted successfully!');
     } catch (error) {
-      console.error('Error deleting the post:', error);
+      console.error('Error deleting the post:');
+      alert('Failed to edit post')
     }
     finally {
       window.location.href = '../';  

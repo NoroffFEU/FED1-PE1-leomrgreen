@@ -50,13 +50,14 @@
   background-color: var(--sky-blue-300);
   color: var(--white);
   border-radius: 10px;
+  cursor: pointer;
   transition: 200ms ease;
 }
 
 #deleteBtn:hover,
 #updateBtn:hover {
-  scale: 1.1;
-  cursor: pointer;
+  background-color: var(--sky-blue-600);
+  transition: 200ms ease;
 }
 
 .fa-triangle-exclamation {

@@ -74,11 +74,6 @@
   transition: 200ms ease;
 }
 
-.btnContainer > button:hover {
-  background-color: var(--sky-blue-600);
-  transition: 200ms ease;
-}
-
 .fa-pen-to-square {
   font-size: 40px;
   background: none;
@@ -92,4 +87,5 @@
 .fa-pen-to-square:hover {
   scale: 1.4;
   transition: 200ms ease;
+  background: none;
 }
