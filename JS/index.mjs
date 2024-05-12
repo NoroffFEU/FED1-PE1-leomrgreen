@@ -1,11 +1,7 @@
-import { gridBtn, gridLayout } from "./gridFilter.mjs";
+import { toggleGridLayout, updateCardStyles } from "./gridFilter.mjs";
 const API_URL = 'https://v2.api.noroff.dev/blog/posts/leomrgreen';
 const loadMoreBtn = document.getElementById('loadMoreBtn');
 const drkModeBtn = document.getElementById('drkModeIcon');
-
-gridBtn.addEventListener('click', ()=> {
-  gridLayout.classList.toggle('active');
-})
 
 function displayPosts(blogArticles) {
   const blogContainer = document.getElementById('articleGrid');
@@ -28,18 +24,6 @@ function displayPosts(blogArticles) {
     }
   });
   updateCardStyles();
-}
-
-function updateCardStyles() {
-  const cards = document.querySelectorAll('.gridCard');
-  const isLightMode = localStorage.getItem('lightMode') === 'true';
-  cards.forEach(card => {
-    if (isLightMode) {
-      card.style.cssText = 'background-color: #eee; color; #0f172a; box-shadow: 0px 8px 10px var(--card-shadow);';
-    } else {
-      card.style.cssText = 'background-color: #1e293b; color: #eee; box-shadow: 0px 8px 10px var(--black);';
-    }
-  });
 }
 
 drkModeBtn.addEventListener('click', () => {
@@ -75,6 +59,9 @@ function generateBlogHtml(article) {
   return gridCard;
 }
 
+
+
+
 async function main() {
   try {
     const response = await fetch(API_URL);
@@ -86,6 +73,7 @@ async function main() {
       displayPosts(blogArticles);  // DOM-manipulation based on if we click on load more or not (slice method)
       loadMoreBtn.style.display = 'none';
     }) 
+    toggleGridLayout();
     
   } catch (error) {
     console.error('ERROR:', error)
