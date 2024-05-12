@@ -156,10 +156,6 @@
   .read-more {
     grid-template-columns: 1fr;
   }
-
-  .about-section {
-    background-attachment: local;
-  }
 }
 
 @media (max-width: 588px) {
