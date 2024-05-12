@@ -44,13 +44,19 @@
           <input type="text" id="title" name="title" required />
 
           <label for="body">Body:</label>
-          <textarea name="body" id="body" cols="30" rows="10"></textarea>
+          <textarea
+            name="body"
+            id="body"
+            cols="30"
+            rows="10"
+            required
+          ></textarea>
 
           <label for="mediaUrl">Media URL:</label>
-          <input type="url" id="mediaUrl" name="mediaUrl" />
+          <input type="url" id="mediaUrl" name="mediaUrl" required />
 
           <label for="mediaAlt">Media description (image alt text):</label>
-          <input type="text" id="mediaAlt" name="mediaAlt" />
+          <input type="text" id="mediaAlt" name="mediaAlt" required />
 
           <button type="submit">Create Post</button>
         </form>
