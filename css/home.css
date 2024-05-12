@@ -67,102 +67,6 @@
   padding: 1rem;
 }
 
-.headline h1 {
-  font-weight: 300;
-}
-
-#articleGrid {
-  width: min(90%, 70rem);
-  margin-inline: auto;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 2rem;
-}
-
-#articleGrid.active {
-  grid-template-columns: 1fr;
-}
-
-#articleGrid.active img {
-  width: 50%;
-  height: auto;
-}
-
-@media (max-width: 1000px) {
-  #articleGrid {
-    grid-template-columns: 1fr 1fr;
-  }
-}
-
-@media (max-width: 700px) {
-  #articleGrid {
-    grid-template-columns: 1fr;
-  }
-}
-
-.gridCard {
-  text-align: center;
-  padding: 2rem;
-  border-radius: 10px;
-  transition: 200ms ease;
-  color: var(--dark-grey-100);
-}
-
-.gridCard:hover {
-  scale: 1.05;
-}
-
-.gridCard h3 {
-  font-weight: 300;
-  font-size: 25px;
-}
-
-.gridCard img {
-  width: min(100%, 350px);
-  height: auto;
-  border-radius: 10px;
-  cursor: pointer;
-  background-color: hsla(222, 47%, 11%, 0.3);
-}
-
-.btnContainer {
-  display: flex;
-  justify-content: center;
-  padding: 2rem;
-}
-
-.btnContainer > button {
-  border: none;
-  padding: 1rem;
-  width: min(80%, 500px);
-  background-color: var(--sky-blue-300);
-  color: var(--white);
-  font-size: 20px;
-  border-radius: 10px;
-  cursor: pointer;
-  transition: 200ms ease;
-}
-
-.btnContainer > button:hover {
-  background-color: var(--sky-blue-600);
-  transition: 200ms ease;
-}
-
-.fa-pen-to-square {
-  font-size: 40px;
-  background: none;
-  color: var(--sky-blue-300);
-  border: none;
-  cursor: pointer;
-  padding-top: 10px;
-  transition: 200ms ease;
-}
-
-.fa-pen-to-square:hover {
-  scale: 1.4;
-  transition: 200ms ease;
-}
-
 @keyframes slideInLeft {
   from {
     transform: translateX(-300px);
@@ -215,8 +119,8 @@
   text-align: center;
   align-items: center;
   background-image: url("../images/astronaut-spacewalk-moon-mixed-media.jpg");
-  background-size: cover;
   background-position: center;
+  background-size: cover;
   background-attachment: fixed;
 }
 

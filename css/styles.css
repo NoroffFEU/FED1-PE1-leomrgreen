@@ -26,6 +26,8 @@
 
 @import "./loader.css";
 
+@import "./blogFeed.css";
+
 * {
   padding: 0;
   margin: 0;
