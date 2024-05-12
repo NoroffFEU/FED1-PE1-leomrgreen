@@ -19,6 +19,7 @@ async function fetchBlogArticle(articleId) {
 
 function displayArticle(article) {
   document.getElementById('blogImage').src = article.media.url;
+  document.getElementById('blogImage').alt = article.media.alt;
   document.getElementById('blogTitle').textContent = article.title;
   document.getElementById('blogBody').textContent = article.body;
   document.getElementById('blogCreate').textContent = 'Created: ' + article.created;
