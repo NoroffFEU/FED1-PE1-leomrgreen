@@ -20,6 +20,7 @@
 
 #articleGrid.row {
   grid-template-columns: 1fr;
+  width: min(90%, 30rem);
 }
 
 .sort-grid {
