@@ -56,7 +56,6 @@
   width: min(80%, 500px);
   background-color: var(--sky-blue-300);
   color: var(--white);
-  font-size: 20px;
   border-radius: 10px;
   cursor: pointer;
   transition: 200ms ease;

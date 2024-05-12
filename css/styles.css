@@ -46,6 +46,7 @@ body {
 
 button {
   font-family: "Oswald", sans-serif;
+  font-size: 20px;
 }
 
 button:hover {

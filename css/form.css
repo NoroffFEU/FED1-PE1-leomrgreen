@@ -18,6 +18,9 @@
   height: 60px;
   border-radius: 10px;
   border: none;
+}
+
+.account-form > input {
   padding: 1rem;
 }
 
@@ -29,9 +32,10 @@ input::placeholder {
 
 .account-form > button {
   background-color: var(--sky-blue-600);
-  border: 1px solid var(--white);
+  border: 2px solid var(--white);
   color: var(--white);
-  font-size: 17px;
+  margin: auto;
+  width: 100%;
   cursor: pointer;
   align-items: center;
 }
