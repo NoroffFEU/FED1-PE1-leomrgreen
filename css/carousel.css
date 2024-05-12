@@ -53,6 +53,11 @@
   font-weight: 300;
 }
 
+.sliderItem h2,
+.sliderItem img {
+  animation: easeInEffect 500ms ease-in;
+}
+
 .sliderItem img {
   max-width: 550px;
   max-height: 550px;
@@ -70,4 +75,16 @@
   cursor: pointer;
   border-radius: 10px;
   transition: 200ms ease;
+}
+
+@keyframes easeInEffect {
+  from {
+    opacity: 0;
+    scale: 0.5;
+  }
+
+  to {
+    opacity: 1;
+    scale: 1;
+  }
 }

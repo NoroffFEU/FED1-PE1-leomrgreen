@@ -23,10 +23,12 @@ nav > ul {
   z-index: 101;
   align-items: center;
   text-decoration: none;
+  transition: 200ms ease;
 }
 
 .logo:hover {
   scale: 1.1;
+  transition: 200ms ease;
 }
 
 .logo i {

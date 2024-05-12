@@ -8,6 +8,7 @@
   width: min(90%, 70rem);
   gap: 2rem;
   padding: 5rem 2rem 3rem 2rem;
+  animation: easeInEffect 500ms ease-in;
 }
 
 #imageContainer {
