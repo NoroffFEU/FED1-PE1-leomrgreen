@@ -25,6 +25,10 @@ nav > ul {
   text-decoration: none;
 }
 
+.logo:hover {
+  scale: 1.1;
+}
+
 .logo i {
   font-size: 53px;
 }
@@ -80,6 +84,10 @@ ul li {
   padding: 5px;
   border-radius: 10px;
   cursor: pointer;
+}
+
+#signOutBtn:hover {
+  background-color: var(--sky-blue-600);
 }
 
 #createInNav {
