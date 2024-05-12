@@ -72,9 +72,14 @@ ul li {
 }
 
 .fa-moon,
-.fa-cloud-sun {
+.bi-brightness-high {
   cursor: pointer;
   transition: 200ms ease;
+}
+
+.bi-brightness-high {
+  display: flex;
+  margin-top: 2px;
 }
 
 #signOutBtn {

@@ -32,7 +32,7 @@ drkModeButton.addEventListener('click', () => {
 
   // Update the icon based on the current mode
   if (!isLightMode) { 
-    drkModeButton.className = 'fa-solid fa-cloud-sun';
+    drkModeButton.className = 'bi bi-brightness-high';
   } else {
     drkModeButton.className = 'fa-regular fa-moon';
   }
@@ -47,7 +47,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
     drkModeButton.className = 'fa-regular fa-moon';
   } else {
-    drkModeButton.className = 'fa-solid fa-cloud-sun';
+    drkModeButton.className = 'bi bi-brightness-high';
   }
 });
 

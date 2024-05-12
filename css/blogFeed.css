@@ -11,12 +11,37 @@
 }
 
 #articleGrid.active {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+#articleGrid.column {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+#articleGrid.row {
   grid-template-columns: 1fr;
 }
 
-#articleGrid.active img {
-  width: 50%;
-  height: auto;
+.sort-grid {
+  color: var(--white);
+}
+
+.sort-grid i {
+  display: flex;
+  justify-content: flex-end;
+  margin: 0 0 35px 0;
+  gap: 10px;
+}
+
+.sort-grid svg,
+.sort-grid i {
+  cursor: pointer;
+  transition: 200ms ease;
+}
+
+.sort-grid i:hover {
+  scale: 1.15;
+  transition: 200ms ease;
 }
 
 .gridCard {

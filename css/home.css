@@ -66,19 +66,6 @@
   }
 }
 
-.sort-grid {
-  color: var(--white);
-  display: flex;
-  justify-content: flex-end;
-  margin: 0 0 35px 0;
-  font-size: 35px;
-  gap: 10px;
-}
-
-.sort-grid svg {
-  cursor: pointer;
-}
-
 .sortSection {
   margin: auto;
   width: min(90%, 70rem);
