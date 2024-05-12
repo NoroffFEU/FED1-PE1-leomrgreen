@@ -63,3 +63,7 @@
   color: var(--white);
   transition: 200ms ease;
 }
+
+#blogPostForm button:hover {
+  background-color: var(--sky-blue-600);
+}
