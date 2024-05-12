@@ -78,16 +78,17 @@
   justify-content: center;
   text-align: center;
   align-items: center;
-  background-image: url("../images/astronaut-spacewalk-moon-mixed-media.jpg");
+  background-image: url("../images/teamspirit.png");
   background-position: center;
-  background-size: cover;
-  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: contain;
+  border-top: 2px solid var(--sky-blue-300);
 }
 
 .infoBox {
   width: min(90%, 30rem);
   color: var(--white);
-  background-color: rgba(59, 130, 246, 0.3);
+  background-color: rgba(59, 130, 246, 0.7);
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
   display: grid;
