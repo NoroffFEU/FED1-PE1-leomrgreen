@@ -48,13 +48,12 @@ function imageCarousel(carouselArray) {
       } else {carouselImage.style.display = 'none'}
 
       carouselImage.innerHTML = `
-      <img src="${carouselArray[i].media.url}">
+      <img src="${carouselArray[i].media.url}" alt="${carouselArray[i].media.alt}">
       <h2>${carouselArray[i].title}</h2>
       <button class="readMoreBtn" data-id="${carouselArray[i].id}">READ MORE</button>`;
       slidesContainer.appendChild(carouselImage);
   }
 
-  // Add event listeners to each button after they have been added to the DOM
   document.querySelectorAll('.readMoreBtn').forEach(button => {
       button.addEventListener('click', function() {
           const articleId = this.getAttribute('data-id');
