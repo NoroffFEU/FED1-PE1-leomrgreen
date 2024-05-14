@@ -12,12 +12,6 @@
   #createBod {
     background-image: none;
   }
-
-  .sortSection {
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-  }
 }
 
 @media (min-width: 1000px) {

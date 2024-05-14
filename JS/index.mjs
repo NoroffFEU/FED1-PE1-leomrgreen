@@ -1,15 +1,9 @@
 import { toggleGridLayout, updateCardStyles } from "./gridFilter.mjs";
-import { dropDownBtn, displayDropDownMenu, changeDropDownIcon} from "./gridFilter.mjs";
 const API_URL = 'https://v2.api.noroff.dev/blog/posts/leomrgreen';
 const loadMoreBtn = document.getElementById('loadMoreBtn');
 const drkModeBtn = document.getElementById('drkModeIcon');
 const searchBar = document.getElementById('searchBar');
 let blogArticles = [];
-
-dropDownBtn.addEventListener('click', () => {
-  displayDropDownMenu();
-  changeDropDownIcon();
-});
 
 // search function that is searching for any related characters from the title / body of the objects
 // .toLowerCase is ensuring that we should get what we search regardless if it's in capital letters or not
