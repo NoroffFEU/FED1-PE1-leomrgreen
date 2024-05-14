@@ -11,9 +11,7 @@ async function fetchEditBlogArticle(articleId) {
     displayArticleBgImage(data)
   } catch (error) {
     console.error('error')
-  } finally {
-    console.log('såja!')
-  }
+  } 
 }
 
 function getDataToForm(data) {
