@@ -55,7 +55,7 @@ drkModeBtn.addEventListener('click', () => {
 
 
 function generateBlogHtml(article) {
-  const gridCard = document.createElement('div');
+  const gridCard = document.createElement('li');
   gridCard.className = 'gridCard drkMode';
   
   const articleImage = document.createElement('img');

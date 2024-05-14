@@ -59,6 +59,12 @@
   gap: 10px;
   font-size: 35px;
 }
+
+.bi-square {
+  font-size: 32px;
+  margin-top: 1px;
+}
+
 .sort-grid i {
   cursor: pointer;
   transition: 200ms ease;
@@ -76,6 +82,7 @@
   border-radius: 10px;
   transition: 200ms ease;
   color: var(--dark-grey-100);
+  list-style: none;
 }
 
 .gridCard:hover {
