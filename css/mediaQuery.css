@@ -132,7 +132,7 @@
     max-width: 100%;
   }
 
-  #articleGrid {
+  #articleGrid.active {
     grid-template-columns: 1fr 1fr;
   }
 

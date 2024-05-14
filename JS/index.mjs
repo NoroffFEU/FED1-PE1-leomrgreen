@@ -2,6 +2,19 @@ import { toggleGridLayout, updateCardStyles } from "./gridFilter.mjs";
 const API_URL = 'https://v2.api.noroff.dev/blog/posts/leomrgreen';
 const loadMoreBtn = document.getElementById('loadMoreBtn');
 const drkModeBtn = document.getElementById('drkModeIcon');
+const searchBar = document.getElementById('searchBar');
+let blogArticles = [];
+
+searchBar.addEventListener('keyup', (e) => {
+  const searchString = e.target.value.toLowerCase();
+  const filteredArticles = blogArticles.filter((article) => {
+    return (
+      article.title.toLowerCase().includes(searchString) ||
+      article.body.toLowerCase().includes(searchString)
+    );
+  });
+  displayPosts(filteredArticles);
+});
 
 function displayPosts(blogArticles) {
   const blogContainer = document.getElementById('articleGrid');
@@ -60,13 +73,11 @@ function generateBlogHtml(article) {
 }
 
 
-
-
 async function main() {
   try {
     const response = await fetch(API_URL);
     const json = await response.json();
-    let blogArticles = json.data;
+    blogArticles = json.data;
     blogArticles.sort((a, b) => new Date(b.created) - new Date(a.created));
     displayPosts(blogArticles.slice(0, 12));
     loadMoreBtn.addEventListener('click', () => {
