@@ -14,9 +14,7 @@ async function getData() {
     skeletonCarouselLoader();
   } catch (error) {
     console.error(error)
-  } finally {
-    console.log("it's working")
-  }
+  } 
 }
 
 function skeletonCarouselLoader() {

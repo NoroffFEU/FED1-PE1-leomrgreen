@@ -17,7 +17,7 @@ searchBar.addEventListener('keyup', (e) => {
     const filteredArticles = blogArticles.filter((article) => {
       return (
         article.title.toLowerCase().includes(searchString) ||
-        article.body.toLowerCase().includes(searchString)
+        article.body.toLowerCase().includes(searchString) 
       );
     });
     displayPosts(filteredArticles);
@@ -98,9 +98,7 @@ async function main() {
     
   } catch (error) {
     console.error('ERROR:', error)
-  } finally {
-    console.log('test');
-  }
+  } 
 }
 
 main();
