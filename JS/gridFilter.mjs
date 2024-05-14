@@ -54,3 +54,19 @@ export function updateCardStyles() {
     }
   });
 }
+
+export const dropDownBtn = document.getElementById('dateSortBtn');
+export const dropDownMenu = document.getElementById('dropDownMenu');
+export const dropDownIcon = document.getElementById('dropDownIcon');
+
+export function displayDropDownMenu() {
+  dropDownMenu.classList.toggle('active');
+};
+
+export function changeDropDownIcon() {
+  if (dropDownMenu.classList.contains("active")) {
+    dropDownIcon.className = 'fa-solid fa-angle-up'
+  } else {
+    dropDownIcon.className = 'fa-solid fa-angle-down'
+  }
+}

@@ -1,20 +1,36 @@
 import { toggleGridLayout, updateCardStyles } from "./gridFilter.mjs";
+import { dropDownBtn, displayDropDownMenu, changeDropDownIcon} from "./gridFilter.mjs";
 const API_URL = 'https://v2.api.noroff.dev/blog/posts/leomrgreen';
 const loadMoreBtn = document.getElementById('loadMoreBtn');
 const drkModeBtn = document.getElementById('drkModeIcon');
 const searchBar = document.getElementById('searchBar');
 let blogArticles = [];
 
+dropDownBtn.addEventListener('click', () => {
+  displayDropDownMenu();
+  changeDropDownIcon();
+});
+
+// search function that is searching for any related characters from the title / body of the objects
+// .toLowerCase is ensuring that we should get what we search regardless if it's in capital letters or not
 searchBar.addEventListener('keyup', (e) => {
   const searchString = e.target.value.toLowerCase();
-  const filteredArticles = blogArticles.filter((article) => {
-    return (
-      article.title.toLowerCase().includes(searchString) ||
-      article.body.toLowerCase().includes(searchString)
-    );
-  });
-  displayPosts(filteredArticles);
+  if (searchString === "") {
+    // If the search bar is empty, reset to the initial state displaying only the first 12 articles
+    displayPosts(blogArticles.slice(0, 12));
+    loadMoreBtn.style.display = ''; 
+  } else {
+    const filteredArticles = blogArticles.filter((article) => {
+      return (
+        article.title.toLowerCase().includes(searchString) ||
+        article.body.toLowerCase().includes(searchString)
+      );
+    });
+    displayPosts(filteredArticles);
+    loadMoreBtn.style.display = 'none'; // Hide the Load More button since all results are shown
+  }
 });
+
 
 function displayPosts(blogArticles) {
   const blogContainer = document.getElementById('articleGrid');
