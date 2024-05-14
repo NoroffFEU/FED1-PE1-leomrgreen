@@ -30,12 +30,6 @@ loginButton.addEventListener('click', function() {
   });
 });
 
-
-function getSession() {
-  const session = JSON.parse(localStorage.getItem("session"));
-  return session;
-}
-
 function createSession(accessToken) {
   const session = localStorage.getItem("session");
   if (!session) {
