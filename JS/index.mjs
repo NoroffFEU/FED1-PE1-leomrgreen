@@ -74,8 +74,7 @@ function generateBlogHtml(article) {
   const articleHeading = document.createElement('h3');
   articleHeading.textContent = article.title;
 
-  if (localStorage.getItem('isUserLoggedIn') === 'true') 
-    { 
+  if (localStorage.getItem('isUserLoggedIn') === 'true') {  
       gridCard.append(articleImage, articleHeading, editBtn); // adds edit-tool icon if user is logged in
       } else {gridCard.append(articleImage, articleHeading)};
 
