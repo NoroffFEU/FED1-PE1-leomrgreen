@@ -7,7 +7,7 @@ nav {
   width: 100%;
   background-color: var(--dark-grey-100);
   align-items: center;
-  z-index: 100;
+  z-index: 300;
   transition: 500ms ease;
 }
 
