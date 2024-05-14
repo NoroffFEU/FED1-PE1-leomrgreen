@@ -93,6 +93,12 @@
   border-radius: 10px;
   cursor: pointer;
   background-color: hsla(222, 47%, 11%, 0.3);
+  transition: 200ms ease;
+}
+
+.gridCard img:hover {
+  background-color: rgba(59, 130, 246, 0.7);
+  transition: 200ms ease;
 }
 
 .btnContainer {
