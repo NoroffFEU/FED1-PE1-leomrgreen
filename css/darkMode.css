@@ -39,3 +39,8 @@
   color: var(--dark-grey-100);
   background-color: #eee;
 }
+
+#loaderAnimation.lightMode {
+  background-color: var(--white);
+  color: var(--dark-grey-100);
+}
