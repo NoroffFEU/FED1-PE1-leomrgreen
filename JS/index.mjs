@@ -1,4 +1,5 @@
 import { toggleGridLayout, updateCardStyles } from "./gridFilter.mjs";
+import { loadingScreen, hideLoadingScreen } from "./loader.mjs";
 const API_URL = 'https://v2.api.noroff.dev/blog/posts/leomrgreen';
 const loadMoreBtn = document.getElementById('loadMoreBtn');
 const drkModeBtn = document.getElementById('drkModeIcon');
@@ -86,6 +87,7 @@ async function main() {
   try {
     const response = await fetch(API_URL);
     const json = await response.json();
+    loadingScreen();
     blogArticles = json.data;
     blogArticles.sort((a, b) => new Date(b.created) - new Date(a.created));
     displayPosts(blogArticles.slice(0, 12));
@@ -97,7 +99,9 @@ async function main() {
     
   } catch (error) {
     console.error('ERROR:', error)
-  } 
+  } finally {
+    hideLoadingScreen();
+  }
 }
 
 main();

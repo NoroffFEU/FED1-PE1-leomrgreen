@@ -12,3 +12,20 @@
   color: var(--sky-blue-500);
   background: none;
 }
+
+#deleteBtn.lightMode {
+  color: var(--dark-grey-100);
+  background-color: #eee;
+}
+
+#deleteBtn.lightMode i {
+  color: var(--dark-grey-100);
+}
+
+.logo.lightMode {
+  background-color: transparent;
+}
+
+.headline.lightMode {
+  background-color: transparent;
+}

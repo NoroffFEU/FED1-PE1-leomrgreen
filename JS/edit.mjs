@@ -1,3 +1,5 @@
+import { loadingScreen, hideLoadingScreen } from "./loader.mjs";
+
 const params = new URLSearchParams(window.location.search);
 const articleId = params.get('id');
 const accessToken = JSON.parse(localStorage.getItem("session")); 
@@ -7,11 +9,14 @@ async function fetchEditBlogArticle(articleId) {
     const response = await fetch(`https://v2.api.noroff.dev/blog/posts/leomrgreen/${articleId}`);
     const json = await response.json();
     const data = json.data;
+    loadingScreen();
     getDataToForm(data)
     displayArticleBgImage(data)
   } catch (error) {
     console.error('error')
-  } 
+  } finally {
+    hideLoadingScreen();
+  }
 }
 
 function getDataToForm(data) {

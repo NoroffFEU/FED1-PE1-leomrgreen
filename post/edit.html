@@ -62,13 +62,14 @@
               <div class="imagePreview"></div>
               <input type="text" id="mediaUrl" name="mediaUrl" required />
               <input type="text" id="mediaAlt" name="mediaAlt" required />
-              <button id="updateBtn" type="submit">
-                EDIT POST <i class="fa-solid fa-user-pen"></i>
-              </button>
-              <button id="deleteBtn" type="button">
-                DELETE POST <i class="fa-solid fa-xmark"></i>
-                <i class="fa-solid fa-triangle-exclamation"></i>
-              </button>
+           <div class="edit-btn-container">
+            <button id="updateBtn" type="submit">
+              EDIT POST <i class="fa-solid fa-user-pen"></i>
+            </button>
+            <button id="deleteBtn" type="button" class="drkMode">
+              DELETE POST <i class="fa-solid fa-xmark"></i>
+            </button>
+           </div>
             </form>
           </section>
       </html>
@@ -107,7 +108,7 @@
         </div>
       </div>
     </footer>
-    <script src="../JS/edit.js"></script>
+    <script type="module" src="../JS/edit.mjs"></script>
     <script src="../JS/navMenu.js"></script>
   </body>
 </html>

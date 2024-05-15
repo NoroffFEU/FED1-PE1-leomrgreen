@@ -13,7 +13,12 @@
 
 .gridCard.loadingDark {
   background: #3a3a3a;
-  background: linear-gradient(110deg, #161e2b 8%, #1e293b 18%, #192231 33%);
+  background: linear-gradient(
+    110deg,
+    var(--dark-grey-100) 8%,
+    #1e293b 18%,
+    #192231 33%
+  );
   background-size: 200% 100%;
   animation: 1.5s skeleton linear infinite;
 }
@@ -40,7 +45,12 @@
 
 .sliderItem.loadingDark {
   background: #3a3a3a;
-  background: linear-gradient(110deg, #161e2b 8%, #1e293b 18%, #192231 33%);
+  background: linear-gradient(
+    110deg,
+    var(--dark-grey-100) 8%,
+    #1e293b 18%,
+    #192231 33%
+  );
   background-size: 200% 100%;
   animation: 1.5s skeleton linear infinite;
   border-radius: 1rem;

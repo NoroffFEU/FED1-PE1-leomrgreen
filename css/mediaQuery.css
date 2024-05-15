@@ -79,7 +79,8 @@
     display: none;
   }
 
-  .banner h1 {
+  .banner h1,
+  .headline h1 {
     font-size: 58px;
   }
 
@@ -159,6 +160,11 @@
 @media (max-width: 950px) {
   .read-more {
     grid-template-columns: 1fr;
+  }
+
+  .edit-btn-container {
+    flex-direction: column;
+    width: 100%;
   }
 }
 
