@@ -29,3 +29,8 @@
 .headline.lightMode {
   background-color: transparent;
 }
+
+.workTitle.lightMode {
+  background: none;
+  color: var(--dark-grey-100);
+}

@@ -51,6 +51,7 @@
   padding: 1rem;
   border-radius: 10px;
   box-shadow: 0px 5px 10px var(--black);
+  transition: 200ms ease;
 }
 
 .about-card h5 {

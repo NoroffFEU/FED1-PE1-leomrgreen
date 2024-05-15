@@ -11,9 +11,9 @@
   --card-shadow: #afafaf;
   --card-gradient: linear-gradient(
     125deg,
-    rgb(9, 27, 56) 0%,
-    rgb(8, 8, 8) 48%,
-    rgb(1, 14, 46) 100%
+    rgb(34, 38, 46) 0%,
+    rgb(18, 22, 41) 48%,
+    rgb(54, 67, 100) 100%
   );
   --card-gradient-light: linear-gradient(
     125deg,
