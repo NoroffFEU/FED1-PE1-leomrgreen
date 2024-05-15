@@ -1,4 +1,3 @@
-document.addEventListener("DOMContentLoaded", function() {
   const submitButton = document.getElementById('submitButton');
 
   submitButton.addEventListener('click', function() {
@@ -31,4 +30,4 @@ document.addEventListener("DOMContentLoaded", function() {
       alert('Error submitting form: ' + error);
     });
   });
-});
+
