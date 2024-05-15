@@ -34,3 +34,8 @@
   background: none;
   color: var(--dark-grey-100);
 }
+
+.hero-anchors a.lightMode {
+  color: var(--dark-grey-100);
+  background-color: #eee;
+}

@@ -47,6 +47,44 @@
   padding: 1rem;
 }
 
+.hero-anchors {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  font-size: 20px;
+}
+
+.hero-anchor {
+  text-decoration: none;
+  border-radius: 10px;
+  transition: 200ms ease;
+  margin-top: 2rem;
+  box-shadow: 0px 1px 5px var(--black);
+}
+
+.hero-anchors a:nth-child(2) {
+  background-color: var(--sky-blue-300);
+  color: var(--white);
+  padding: 10px;
+  width: 25%;
+}
+
+.hero-anchors a:nth-child(2):hover {
+  background-color: var(--sky-blue-600);
+  transition: 200ms ease;
+}
+
+.hero-anchors a:first-child {
+  background-color: var(--dark-grey-200);
+  color: var(--white);
+  padding: 10px;
+  width: 25%;
+}
+
+.hero-anchors a:first-child:hover {
+  color: var(--sky-blue-300);
+}
+
 @keyframes slideInLeft {
   from {
     transform: translateX(-300px);
