@@ -4,6 +4,7 @@ const API_URL = 'https://v2.api.noroff.dev/blog/posts/leomrgreen';
 const loadMoreBtn = document.getElementById('loadMoreBtn');
 const drkModeBtn = document.getElementById('drkModeIcon');
 const searchBar = document.getElementById('searchBar');
+const noneFound = document.getElementById('noneFound');
 let blogArticles = [];
 
 // search function that is searching for any related characters from the title / body of the objects
@@ -14,6 +15,7 @@ searchBar.addEventListener('keyup', (e) => {
     // If the search bar is empty, reset to the initial state displaying only the first 12 articles
     displayPosts(blogArticles.slice(0, 12));
     loadMoreBtn.style.display = ''; 
+    noneFound.style.display = 'none'
   } else {
     const filteredArticles = blogArticles.filter((article) => {
       return (
@@ -23,6 +25,11 @@ searchBar.addEventListener('keyup', (e) => {
     });
     displayPosts(filteredArticles);
     loadMoreBtn.style.display = 'none'; // Hide the Load More button since all results are shown
+    if (filteredArticles.length === 0) {
+      noneFound.style.display = 'flex'; // Message pop up to let user now that nothing is matching their search
+    } else {
+      noneFound.style.display = 'none';
+    }
   }
 });
 

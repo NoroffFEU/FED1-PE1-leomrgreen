@@ -146,3 +146,11 @@
   transition: 200ms ease;
   background: none;
 }
+
+#noneFound {
+  color: var(--sky-blue-300);
+  font-size: 30px;
+  display: none;
+  justify-content: center;
+  padding: 2rem;
+}
