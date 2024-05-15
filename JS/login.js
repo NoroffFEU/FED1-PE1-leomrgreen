@@ -1,33 +1,40 @@
 import { loadingScreen } from "./loader.mjs";
 
-const loginButton = document.getElementById('loginButton');
+const loginForm = document.getElementById('loginForm');
 const loginInfo = document.getElementById('loginInfo');
 
-loginButton.addEventListener('click', function() {
+loginForm.addEventListener('submit', async function(event) {
+  event.preventDefault();
+
   const formData = {
     email: document.getElementById('loginEmail').value,
     password: document.getElementById('loginPassword').value
   };
 
-  fetch('https://v2.api.noroff.dev/auth/login', {
-    method: 'POST',
-    headers: {
-      'Content-Type': 'application/json'
-    },
-    body: JSON.stringify(formData)
-  })
-  .then(response => response.json())
-  .then(data => {
-    data = data.data;
-    if (data && data.accessToken) {
-      createSession(data.accessToken);
+  try {
+    const response = await fetch('https://v2.api.noroff.dev/auth/login', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify(formData)
+    });
+    const data = await response.json();
+    if (data && data.data && data.data.accessToken) {
+      createSession(data.data.accessToken);
+      alert('Successfully logged in!')
       loadingScreen();
       setTimeout(() => {
-      // alert('Successfully logged in!')
-      window.location.href = '../'
+        window.location.href = '../';
       }, 1000);
-    } else {loginInfo.textContent = 'Invalid email or password'};
-  });
+    } else {
+      loginInfo.textContent = 'Invalid email or password';
+    }
+  } catch (error) {
+    console.error('Error:', error);
+    loginInfo.textContent = 'An error occurred. Please try again.';
+    loginInfo.style.color = 'red';
+  }
 });
 
 function createSession(accessToken) {
@@ -37,5 +44,3 @@ function createSession(accessToken) {
     localStorage.setItem("isUserLoggedIn", true);
   }
 }
-
-//Blogpostguy88
