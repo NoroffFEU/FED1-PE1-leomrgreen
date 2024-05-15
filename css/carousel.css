@@ -63,6 +63,12 @@
   max-height: 550px;
   margin-inline: auto;
   border-radius: 1rem;
+  background: linear-gradient(
+    125deg,
+    rgba(9, 27, 56, 0.445) 0%,
+    rgba(8, 8, 8, 0.534) 48%,
+    rgba(1, 14, 46, 0.425) 100%
+  );
 }
 
 .readMoreBtn {
@@ -80,7 +86,7 @@
 @keyframes easeInEffect {
   from {
     opacity: 0;
-    scale: 0.5;
+    scale: 0.7;
   }
 
   to {

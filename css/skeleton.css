@@ -25,7 +25,7 @@
 
 .gridCard.loadingDark img,
 .gridCard.loadingDark h3,
-.gridCard.loadingDark i {
+.gridCard.loadingDark button {
   opacity: 0;
 }
 
