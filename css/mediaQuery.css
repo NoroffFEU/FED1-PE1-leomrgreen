@@ -189,7 +189,7 @@
   }
 }
 
-@media (max-width: 450px) {
+@media (max-width: 580px) {
   .banner {
     padding-top: 7rem;
   }
