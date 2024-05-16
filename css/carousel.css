@@ -1,6 +1,7 @@
 .carousel-section {
-  width: min(95%, 70rem);
+  width: min(95%, 50rem);
   margin-inline: auto;
+  margin-top: 3rem;
 }
 
 #carouselContainer {
@@ -10,14 +11,14 @@
   margin-inline: auto;
   justify-content: center;
   align-items: center;
-  padding: 50px;
+  padding: 40px;
+  background-color: var(--dark-grey-200);
+  border-radius: 10px;
+  box-shadow: 0px 8px 10px rgb(24, 24, 24);
 }
 
 #prev,
 #next {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-150%);
   background: none;
   border: none;
   color: var(--sky-blue-300);
@@ -28,16 +29,38 @@
 
 #prev:hover,
 #next:hover {
-  scale: 1.05;
+  scale: 1.1;
   transition: 100ms ease;
 }
 
-#prev {
-  left: 10%;
+.carousel-btns {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  background-color: var(--dark-grey-300);
+  border-radius: 10px;
+  margin-top: 2rem;
+  padding: 8px 15px 8px 15px;
+  box-shadow: 0px 8px 5px var(--dark-grey-100);
 }
 
-#next {
-  right: 10%;
+.dots {
+  color: var(--dark-grey-100);
+  cursor: pointer;
+  transition: 100ms ease;
+}
+
+.arrows {
+  display: flex;
+  gap: 10px;
+}
+
+#dotOne:hover,
+#dotTwo:hover,
+#dotThree:hover {
+  scale: 1.1;
+  transition: 100ms ease;
 }
 
 .sliderItem {
@@ -51,11 +74,6 @@
 }
 .sliderItem h2 {
   font-weight: 300;
-}
-
-.sliderItem h2,
-.sliderItem img {
-  animation: easeInEffect 500ms ease-in;
 }
 
 .sliderItem img {
@@ -92,5 +110,33 @@
   to {
     opacity: 1;
     scale: 1;
+  }
+}
+
+@keyframes slideInLeftC {
+  from {
+    transform: translateX(-250px);
+    scale: 0.8;
+    opacity: 0;
+  }
+
+  to {
+    transform: translateX(0);
+    scale: 1;
+    opacity: 1;
+  }
+}
+
+@keyframes slideInRightC {
+  from {
+    transform: translateX(250px);
+    scale: 0.8;
+    opacity: 0;
+  }
+
+  to {
+    transform: translateX(0);
+    scale: 1;
+    opacity: 1;
   }
 }

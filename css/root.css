@@ -5,8 +5,10 @@
   --sky-blue-600: #1e3a8a;
   --dark-grey-100: #1f2937;
   --dark-grey-200: #374151;
+  --dark-grey-300: #495568;
   --white: #f1f5f9;
-  --white-100: #e2e2e2;
+  --white-100: #eee;
+  --white-200: #cfcfcf;
   --black: #000;
   --card-shadow: #afafaf;
   --card-gradient: linear-gradient(
