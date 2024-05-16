@@ -7,7 +7,7 @@
 
 .gridCard.loading img,
 .gridCard.loading h3,
-.gridCard.loading i {
+.gridCard.loading button {
   opacity: 0;
 }
 
