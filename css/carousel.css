@@ -1,7 +1,7 @@
 .carousel-section {
   width: min(95%, 40rem);
   margin-inline: auto;
-  margin-top: 3rem;
+  padding: 1rem 0 3rem 0;
 }
 
 #carouselContainer {
