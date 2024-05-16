@@ -182,6 +182,11 @@
   .banner {
     grid-template-columns: 1fr;
   }
+
+  #next,
+  #prev {
+    font-size: 2rem;
+  }
 }
 
 @media (max-width: 450px) {
