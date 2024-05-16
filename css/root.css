@@ -17,6 +17,12 @@
     rgba(8, 8, 8, 0.534) 48%,
     rgba(1, 14, 46, 0.425) 100%
   );
+  --card-gradient-alt: linear-gradient(
+    125deg,
+    rgba(9, 27, 56, 0.945) 0%,
+    rgba(8, 8, 8, 0.934) 48%,
+    rgba(1, 14, 46, 0.925) 100%
+  );
   --card-gradient-light: linear-gradient(
     125deg,
     rgba(59, 130, 246, 1) 0%,

@@ -8,7 +8,7 @@ function updateCardStyles() {
       card.style.cssText = 'background: var(--card-gradient-light);';
       console.log(aboutCards + card);
     } else {
-      card.style.cssText = 'background: var(--card-gradient)';
+      card.style.cssText = 'background: var(--card-gradient-alt)';
     }
   });
 }
