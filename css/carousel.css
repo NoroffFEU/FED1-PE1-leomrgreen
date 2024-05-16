@@ -1,5 +1,5 @@
 .carousel-section {
-  width: min(95%, 50rem);
+  width: min(95%, 40rem);
   margin-inline: auto;
   margin-top: 3rem;
 }
@@ -77,8 +77,8 @@
 }
 
 .sliderItem img {
-  max-width: 550px;
-  max-height: 550px;
+  max-width: 400px;
+  max-height: 400px;
   margin-inline: auto;
   border-radius: 1rem;
   background: linear-gradient(

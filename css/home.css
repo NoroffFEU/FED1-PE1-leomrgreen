@@ -1,5 +1,4 @@
 .banner {
-  height: 90vh;
   width: min(90%, 85rem);
   display: grid;
   grid-template-columns: 1fr 1fr;
