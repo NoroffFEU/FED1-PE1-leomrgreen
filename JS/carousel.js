@@ -41,7 +41,7 @@ function imageCarousel(carouselArray) {
   slidesContainer.innerHTML = '';
   for (let i = 0; i < carouselArray.length; i++) {
     const carouselImage = document.createElement('div');
-    carouselImage.className = 'sliderItem';
+    carouselImage.className = 'sliderItem drkMode';
     if (i === 0) {
       carouselImage.style.display = 'flex';
     } else {

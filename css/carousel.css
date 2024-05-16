@@ -70,7 +70,7 @@
   font-size: 30px;
   color: var(--sky-blue-300);
   text-wrap: nowrap;
-  gap: 2rem;
+  gap: 1rem;
 }
 .sliderItem h2 {
   font-weight: 300;
