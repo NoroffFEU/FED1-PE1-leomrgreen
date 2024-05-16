@@ -100,12 +100,7 @@
   height: auto;
   border-radius: 10px;
   cursor: pointer;
-  background: linear-gradient(
-    125deg,
-    rgba(9, 27, 56, 0.445) 0%,
-    rgba(8, 8, 8, 0.534) 48%,
-    rgba(1, 14, 46, 0.425) 100%
-  );
+  background: var(--card-gradient);
   transition: 200ms ease;
 }
 
