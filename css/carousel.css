@@ -48,7 +48,7 @@
 .dots {
   color: var(--dark-grey-100);
   cursor: pointer;
-  transition: 100ms ease;
+  transition: 300ms ease-in;
 }
 
 .arrows {
@@ -60,7 +60,7 @@
 #dotTwo:hover,
 #dotThree:hover {
   scale: 1.1;
-  transition: 100ms ease;
+  transition: 300ms ease-in;
 }
 
 .sliderItem {
