@@ -64,9 +64,10 @@ function displayPosts(blogArticles) {
   updateCardStyles();
 }
 
+// this ensures that the cards are styled correctly based on our darkMode variable in local storage && if drkModeBtn is clicked
 drkModeBtn.addEventListener('click', () => {
   updateCardStyles(); 
-});
+}); 
 
 
 function generateBlogHtml(article) {
