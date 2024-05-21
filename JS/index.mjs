@@ -5,7 +5,14 @@ const loadMoreBtn = document.getElementById('loadMoreBtn');
 const drkModeBtn = document.getElementById('drkModeIcon');
 const searchBar = document.getElementById('searchBar');
 const noneFound = document.getElementById('noneFound');
+const signUpBtn = document.getElementById('signUpBtn');
 let blogArticles = [];
+
+if (localStorage.getItem('isUserLoggedIn') === 'true') {
+  signUpBtn.style.display = 'none';
+} else {
+  signUpBtn.style.display = 'flex';
+}
 
 // search function that is searching for any related characters from the title / body of the objects
 // .toLowerCase is ensuring that we should get what we search regardless if it's in capital letters or not
