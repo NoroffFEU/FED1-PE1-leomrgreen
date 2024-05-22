@@ -20,6 +20,11 @@
   border: none;
 }
 
+.account-form > label {
+  color: var(--white);
+  display: flex;
+}
+
 .account-form > input {
   padding: 1rem;
 }
