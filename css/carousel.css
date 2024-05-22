@@ -34,7 +34,7 @@
   margin-inline: auto;
   justify-content: center;
   align-items: center;
-  padding: 40px;
+  padding: 25px;
   background-color: var(--dark-grey-200);
   border-radius: var(--br-10);
   box-shadow: 0px 8px 10px var(--card-shadow-drk);
