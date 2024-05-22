@@ -10,6 +10,7 @@ async function fetchBlogArticle(articleId) {
     initializeSkeletonLoader();
   } catch (error) {
     console.error('Article Not Found')
+    document.getElementById('blogTitle').textContent = 'ARTICLE NO LONGER EXISTS';
   } finally {
     hideSkeletonLoader();
   }
