@@ -13,8 +13,8 @@
   align-items: center;
   padding: 40px;
   background-color: var(--dark-grey-200);
-  border-radius: 10px;
-  box-shadow: 0px 8px 10px rgb(24, 24, 24);
+  border-radius: var(--br-10);
+  box-shadow: 0px 8px 10px var(--card-shadow-drk);
 }
 
 #prev,
@@ -40,7 +40,7 @@
   justify-content: space-between;
   width: 100%;
   background-color: var(--dark-grey-300);
-  border-radius: 10px;
+  border-radius: var(--br-10);
   margin-top: 2rem;
   padding: 8px 15px 8px 15px;
   box-shadow: 0px 8px 5px var(--dark-grey-100);
@@ -93,7 +93,7 @@
   margin: auto;
   padding: 10px 15px 10px 15px;
   cursor: pointer;
-  border-radius: 10px;
+  border-radius: var(--br-10);
   transition: 200ms ease;
 }
 

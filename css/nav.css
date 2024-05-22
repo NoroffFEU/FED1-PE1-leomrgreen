@@ -90,7 +90,7 @@ ul li {
   background-color: var(--sky-blue-300);
   color: var(--white);
   padding: 5px;
-  border-radius: 10px;
+  border-radius: var(--br-10);
   cursor: pointer;
 }
 

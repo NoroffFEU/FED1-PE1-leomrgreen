@@ -16,7 +16,7 @@
 .account-form > input,
 .account-form > button {
   height: 60px;
-  border-radius: 10px;
+  border-radius: var(--br-10);
   border: none;
 }
 

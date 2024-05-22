@@ -50,7 +50,7 @@ export function updateCardStyles() {
     if (isLightMode) {
       card.style.cssText = 'background-color: var(--white-100); color: var(--dark-grey-100); box-shadow: 0px 8px 10px var(--card-shadow);';
     } else {
-      card.style.cssText = 'background-color: var(--dark-grey-200); color: #eee; box-shadow: 0px 8px 10px var(--black);';
+      card.style.cssText = 'background-color: var(--dark-grey-200); color: #eee; box-shadow: 0px 8px 10px var(--card-shadow-drk);';
     }
   });
 }

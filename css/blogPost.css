@@ -18,7 +18,7 @@
 
 #imageContainer img {
   max-width: 50%;
-  border-radius: 10px;
+  border-radius: var(--br-10);
 }
 
 #descContainer {

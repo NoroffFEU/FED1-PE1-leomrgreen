@@ -28,7 +28,7 @@
   height: 35px;
   padding: 0.5rem;
   width: 100%;
-  border-radius: 10px;
+  border-radius: var(--br-10);
   border: 2px solid var(--sky-blue-300);
 }
 
@@ -36,7 +36,7 @@
   padding: 0.5rem;
   width: 100%;
   resize: none;
-  border-radius: 10px;
+  border-radius: var(--br-10);
   border: 2px solid var(--sky-blue-300);
 }
 
@@ -57,7 +57,7 @@
   background-color: var(--sky-blue-300);
   padding: 10px;
   border: none;
-  border-radius: 10px;
+  border-radius: var(--br-10);
   width: 50%;
   cursor: pointer;
   color: var(--white);
