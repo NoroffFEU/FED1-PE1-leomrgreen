@@ -25,7 +25,7 @@ function displayArticle(article) {
   document.getElementById('blogUpdate').textContent = 'Updated: ' + article.updated;
   document.getElementById('blogAuthor').textContent = 'Published by: ' + article.author.name;
   const pageTitle = document.querySelector('title'); 
-  pageTitle.textContent = `StarLog | ${article.title}`
+  pageTitle.textContent = `StarLog | ${article.title}` // this changes the title of the HTML page based on articleId
 }
 
 fetchBlogArticle(articleId);
