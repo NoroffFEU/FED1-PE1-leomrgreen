@@ -24,6 +24,8 @@ function displayArticle(article) {
   document.getElementById('blogCreate').textContent = 'Created: ' + article.created;
   document.getElementById('blogUpdate').textContent = 'Updated: ' + article.updated;
   document.getElementById('blogAuthor').textContent = 'Published by: ' + article.author.name;
+  const pageTitle = document.querySelector('title'); 
+  pageTitle.textContent = `StarLog | ${article.title}`
 }
 
 fetchBlogArticle(articleId);
