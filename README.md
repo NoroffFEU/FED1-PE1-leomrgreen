@@ -1,6 +1,6 @@
 # FED1 Project Exam 1
 
-![image](https://i.ibb.co/rmvCzqS/projectX.png)
+![image](https://i.ibb.co/WHN8mYB/project-Xgetit.png)
 
 ## Description
 A website built for a fictional company called StarLog: 
@@ -20,7 +20,11 @@ A website built for a fictional company called StarLog:
 ### Clone the repo:
 
 ```
-git clone https://github.com/leomrgreen/.git
+git clone https://github.com/NoroffFEU/FED1-PE1-leomrgreen.git
+```
+
+```
+code .
 ```
 
 ### Go Live
